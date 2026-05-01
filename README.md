@@ -142,7 +142,7 @@ The skeleton is a **complete package** – Grav CMS, the Helios Open Reader plug
 2. Have your web server login credentials ready (username and password)
 
 ### Installation Steps
-1. **Download** the [Grav Helios Open Reader Skeleton](https://github.com/paulhibbitts/grav-skeleton-helios-open-reader/releases/latest) package
+1. **Download** the [Grav Helios Open Reader Skeleton](https://github.com/hibbitts-design/grav-skeleton-helios-open-reader/releases/latest) package
 2. **Unzip** the package onto your desktop
 3. **Copy** the entire Grav Helios Open Reader folder to your web server (e.g. into `public_html/` or a subfolder within it)
 4. **Open your browser** and go to your site's URL (e.g. `https://yoursite.com/grav-open-reader`)
