@@ -1,10 +1,10 @@
 ---
 title: 'Callout Blocks'
-description: 'All eight callout blocks demonstrated in context, with syntax and usage notes.'
+description: 'All eleven callout blocks demonstrated in context, with syntax and usage notes.'
 ---
 
 [objectives]
-- Identify the eight callout blocks available in Helios Open Reader
+- Identify the eleven callout blocks available in Helios Open Reader
 - Apply callout blocks in your own reader content
 - Choose the appropriate callout type for different instructional purposes
 [/objectives]
@@ -36,9 +36,10 @@ The [raw]`[objectives]`[/raw] callout renders a green Learning Objectives block.
 ## Key Takeaways – [raw]`[key-takeaways]`[/raw]
 
 [key-takeaways]
-- All eight callouts use the same `[name]...[/name]` syntax
+- All eleven callouts use the same `[name]...[/name]` syntax
 - Every callout accepts `title="..."` for a custom heading
 - `[objectives]` content can also come from the `learning_objectives:` frontmatter field
+- `[project-brief]`, `[feedback-requested]`, and `[process-note]` support student projects and draft OER
 - GitHub-style callouts (`> [!TIP]`) are a lightweight alternative for inline notices
 [/key-takeaways]
 
@@ -111,3 +112,27 @@ Use [raw]`[case-study]`[/raw] (red) for real-world scenarios that situate a conc
 [/announcement]
 
 Use [raw]`[announcement]`[/raw] (purple by default) for notices, updates, or time-sensitive alerts. Set `type="note"`, `type="tip"`, `type="warning"`, or `type="caution"` to change the colour.
+
+## Project Brief – [raw]`[project-brief]`[/raw]
+
+[project-brief title="Publish an Open Reader"]
+Choose a set of readings or materials you currently share via a course pack, LMS file list, or email. Organise them into 3–5 sections, write a short description for each, and publish them as a Helios Open Reader with CC licensing and OER attribution. The reader should be self-contained — a reader who finds it without any other context should understand what it is and who it is for.
+[/project-brief]
+
+Use [raw]`[project-brief]`[/raw] (amber) to frame the assignment or challenge prompt at the top of a project page, clearly distinguishing the task from the student's own response.
+
+## Feedback Requested – [raw]`[feedback-requested]`[/raw]
+
+[feedback-requested title="Feedback Requested – Section Structure"]
+We're unsure whether splitting Installation into two sub-pages (Requirements and Steps) adds clarity or just extra clicks. Does the separation feel natural to you, or would a single page flow better?
+[/feedback-requested]
+
+Use [raw]`[feedback-requested]`[/raw] (purple) to flag specific content awaiting review — from classmates in a student project, from peers reviewing a draft OER, or from an instructor evaluating work in progress.
+
+## Process Note – [raw]`[process-note]`[/raw]
+
+[process-note title="Initial structure vs. final structure"]
+Originally planned four sections mirroring the course schedule, but the third and fourth sections had too much overlap. Merged them into a single section on publishing and sharing, which made the navigation much cleaner. The OER attribution section was added late after realising the CC license badge alone wasn't enough context for readers unfamiliar with Creative Commons.
+[/process-note]
+
+Use [raw]`[process-note]`[/raw] (blue) in student project pages to document iterations, pivots, and decisions made during the work — showing the process as well as the outcome.
