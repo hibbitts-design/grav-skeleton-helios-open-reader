@@ -342,7 +342,7 @@ The following settings are available in the Admin panel under **Plugins → Heli
 
 ### Assets
 - **helios.css** – Theme styling (announcement blockquotes, heading typography, Font Awesome spacing, responsive containers)
-- **reader.css** – Reader-specific styles (pedagogical callout spacing, resume reading strip, reading progress indicator, top Prev/Next navigation styling)
+- **reader.css** – Reader-specific styles (callout blocks spacing, resume reading strip, reading progress indicator, top Prev/Next navigation styling)
 - **helios.js** – Embedly dark/light theme support, Save My Place localStorage logic, HTMX content-loaded integration
 - **print.css** – Print stylesheet (hides navigation chrome, resets colors for light and dark themes, controls page breaks, displays absolute link URLs, sets consistent page margins)
 - **admin.css** – Helios-inspired Admin Panel styling (conditionally loaded based on the Helios-inspired Admin Styling setting)
