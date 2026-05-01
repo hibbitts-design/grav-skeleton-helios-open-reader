@@ -1,0 +1,24 @@
+# Grav Specific
+accounts/*
+!accounts/.*
+config/security.yaml
+config/versions.yaml
+data/*
+!data/.*
+plugins/*
+!plugins/.*
+!plugins/helios-open-reader/
+!plugins/helios-open-reader/**
+!themes/helios/.*
+themes/helios/*
+!themes/quark/.*
+themes/quark/*
+localhost/*
+!localhost/.*
+
+# OS Generated
+.DS_Store*
+thumbs.db
+Icon?
+Thumbs.db
+*.swp
