@@ -90,7 +90,7 @@ Helios Open Reader provides a ready-built open textbook or reader site using por
 - **Section sub-pages** — sections can contain any number of sub-pages, all shown in the sidebar and navigable with Prev/Next controls
 - Reader home page with cover image, title, subtitle, authors, edition, and CC license badge
 
-### callout blocks
+### Callout Blocks
 - **Learning Objectives** — `[objectives]...[/objectives]` (green); also available as frontmatter (`learning_objectives:`) for automatic rendering at the top of a section page
 - **Key Takeaways** — `[key-takeaways]...[/key-takeaways]` (blue)
 - **Example** — `[example]...[/example]` (purple)
