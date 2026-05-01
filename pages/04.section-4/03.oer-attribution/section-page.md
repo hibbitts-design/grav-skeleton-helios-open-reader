@@ -9,7 +9,7 @@ description: 'Displaying a CC license attribution block in the reader footer and
 A statement that identifies the author, title, and license of an openly licensed work. Creative Commons recommends the **TASL** format: Title, Author, Source (URL), License. Helios Open Reader displays this in the footer when the OER Attribution Block is enabled.
 [/definition]
 
-The OER attribution block displays a CC license statement in the footer of every page, drawn from the reader home page frontmatter. Enable it via **Admin → Plugins → Helios Open Reader → Show OER Attribution Block**.
+The OER attribution block displays a CC license statement in the footer of every page, drawn from the reader home page frontmatter. Enable it via **Admin → Pages → Reader Home → OER Attribution tab → Show OER Attribution Block**.
 
 The relevant frontmatter fields in `reader.md`:
 

@@ -11,9 +11,7 @@ The following settings are available in the Admin panel under **Plugins → Heli
 | Admin Font Size | Large | Sets the Admin Panel font size: Default, Large, or Larger |
 | Show Site Logo Icon | Enabled | Show or hide the icon square next to the Logo Text in the header when no logo image is set |
 | Site Logo Icon | `tabler/notebook.svg` | Tabler icon path for the site logo icon square. Only applies when Show Site Logo Icon is enabled |
-| Prev/Next Page Controls Position | Top and bottom | Where to display Prev/Next navigation on section pages: Top and bottom, Top only, or Bottom only |
 | Show Plugin Credits | Enabled | Show or hide the "Built with Grav · Helios · Helios Open Reader" attribution line in the footer |
-| Show OER Attribution Block | Disabled | Display the CC license and attribution text in the footer, drawn from the reader home page frontmatter |
 | Show Repository Host Icon Link in Header | Enabled | Show a GitHub or Codeberg icon link to the reader repository in the site header (requires GitHub Integration enabled in the Helios theme) |
 | Git Link Icon | `tabler/file-text.svg` | Tabler icon path for the Git link icon shown in the page footer |
 | Git Link Mode | View file | Whether the Git link opens the file for **viewing** (default, for open access) or **editing** (for contributors with repository access) |
