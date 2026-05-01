@@ -108,7 +108,7 @@ Use [raw]`[case-study]`[/raw] (red) for real-world scenarios that situate a conc
 ## Announcement – [raw]`[announcement]`[/raw]
 
 [announcement title="For simple inline notices, GitHub-style callouts are zero-friction"]
-`> [!NOTE]`, `> [!TIP]`, `> [!IMPORTANT]`, `> [!WARNING]`, and `> [!CAUTION]` are lightweight alternatives to the `[announcement]` shortcode. Use them for brief inline notices that don't need a formal block structure.
+`> [!NOTE]`, `> [!TIP]`, `> [!IMPORTANT]`, `> [!WARNING]`, and `> [!CAUTION]` are lightweight alternatives to the [raw]`[announcement]`[/raw] shortcode. Use them for brief inline notices that don't need a formal block structure.
 [/announcement]
 
 Use [raw]`[announcement]`[/raw] (purple by default) for notices, updates, or time-sensitive alerts. Set `type="note"`, `type="tip"`, `type="warning"`, or `type="caution"` to change the colour.
