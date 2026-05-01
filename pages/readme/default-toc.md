@@ -21,7 +21,7 @@ Content pages are written in Markdown, with optional shortcodes for embedding an
 
 ## Why Helios Open Reader
 
-Helios Open Reader gives you a modern, open, and fully controlled web reading experience that works alone or embedded in any LMS — a dedicated home for open textbooks, course readers, and student projects that you control completely.
+Helios Open Reader gives you a modern, open, and fully controlled web reading experience that works alone or embedded in any LMS – a dedicated home for open textbooks, course readers, and student projects that you control completely.
 
 - Ready in minutes – a complete, pre-configured package with demo content included
 - Structured – supports sections with sub-pages, auto-detected from folder naming, with a configurable section label (Chapter, Project, Unit, Module, or any custom term)
@@ -35,32 +35,32 @@ Helios Open Reader gives you a modern, open, and fully controlled web reading ex
 
 ## Features
 
-Helios Open Reader provides a ready-built site for open educational content — open textbooks, readers, and student projects — using portable Markdown files you fully control. Highlights include a configurable sections structure, a full set of callout blocks, Save My Place navigation, and optional Git Sync for open collaborative authoring.
+Helios Open Reader provides a ready-built site for open educational content – open textbooks, readers, and student projects – using portable Markdown files you fully control. Highlights include a configurable sections structure, a full set of callout blocks, Save My Place navigation, and optional Git Sync for open collaborative authoring.
 
 ### Reader Structure
-- **Sections structure** — top-level folders named `section-N` are auto-detected as sections and render as cards on the reader home
-- **Section N header** — section pages automatically display their section number and label in the page header; inherits correctly for all sub-pages within a section. The label is configurable (e.g. Chapter, Project, Unit, Module) via **Admin → Pages → Reader Home → Section Label**
-- **Section sub-pages** — sections can contain any number of sub-pages, all shown in the sidebar and navigable with Prev/Next controls
+- **Sections structure** – top-level folders named `section-N` are auto-detected as sections and render as cards on the reader home
+- **Section N header** – section pages automatically display their section number and label in the page header; inherits correctly for all sub-pages within a section. The label is configurable (e.g. Chapter, Project, Unit, Module) via **Admin → Pages → Reader Home → Section Label**
+- **Section sub-pages** – sections can contain any number of sub-pages, all shown in the sidebar and navigable with Prev/Next controls
 - Reader home page with cover image, title, subtitle, authors, edition, and CC license badge
 
 ### Callout Blocks
-- **Learning Objectives** — `[objectives]...[/objectives]` (green); also available as frontmatter (`learning_objectives:`) for automatic rendering at the top of a section page
-- **Key Takeaways** — `[key-takeaways]...[/key-takeaways]` (blue)
-- **Example** — `[example]...[/example]` (purple)
-- **Exercise** — `[exercise]...[/exercise]` (amber)
-- **Definition** — `[definition]...[/definition]` (blue)
-- **Reflection** — `[reflection]...[/reflection]` (green)
-- **Case Study** — `[case-study]...[/case-study]` (red)
-- **Announcement** — `[announcement]...[/announcement]` (purple by default; configurable type)
+- **Learning Objectives** – `[objectives]...[/objectives]` (green); also available as frontmatter (`learning_objectives:`) for automatic rendering at the top of a section page
+- **Key Takeaways** – `[key-takeaways]...[/key-takeaways]` (blue)
+- **Example** – `[example]...[/example]` (purple)
+- **Exercise** – `[exercise]...[/exercise]` (amber)
+- **Definition** – `[definition]...[/definition]` (blue)
+- **Reflection** – `[reflection]...[/reflection]` (green)
+- **Case Study** – `[case-study]...[/case-study]` (red)
+- **Announcement** – `[announcement]...[/announcement]` (purple by default; configurable type)
 - All callouts accept an optional `title="..."` parameter and support Markdown content
 - Five built-in GitHub-style callouts: `> [!NOTE]`, `> [!TIP]`, `> [!IMPORTANT]`, `> [!WARNING]`, `> [!CAUTION]`
 
 ### Navigation & Reading Experience
-- **Save My Place** — records the last section page visited in localStorage; a dismissable "Continue reading" strip appears on the reader home page on return
-- **Reading progress indicator** — shows current page position (e.g. Page 4 of 22) with an accessible progress bar above the Prev/Next navigation on section pages
-- **Prev/Next navigation** — configurable position: top, bottom, or both
-- **TOC scroll spy** — active heading highlighted in the Table of Contents as the reader scrolls
-- **Start button** — on the reader home; links directly to the first section. Button text is configurable (e.g. `Start Reading`, `Browse Projects`, `View Guides`)
+- **Save My Place** – records the last section page visited in localStorage; a dismissable "Continue reading" strip appears on the reader home page on return
+- **Reading progress indicator** – shows current page position (e.g. Page 4 of 22) with an accessible progress bar above the Prev/Next navigation on section pages
+- **Prev/Next navigation** – configurable position: top, bottom, or both
+- **TOC scroll spy** – active heading highlighted in the Table of Contents as the reader scrolls
+- **Start button** – on the reader home; links directly to the first section. Button text is configurable (e.g. `Start Reading`, `Browse Projects`, `View Guides`)
 - Search across the full reader via the simplesearch plugin
 
 ### Embedding & Shortcodes
@@ -70,11 +70,11 @@ Helios Open Reader provides a ready-built site for open educational content — 
 
 ### LMS Embedding
 
-Append `?embedded=true` to any page URL to display only the page content — no sidebar, header, or pagination. Designed for embedding Helios Open Reader pages in an LMS iframe (Canvas, Moodle, Brightspace, etc.).
+Append `?embedded=true` to any page URL to display only the page content – no sidebar, header, or pagination. Designed for embedding Helios Open Reader pages in an LMS iframe (Canvas, Moodle, Brightspace, etc.).
 
 - All internal links automatically carry the `?embedded=true` parameter forward, so navigating between pages stays in embedded mode
 - `?chromeless=true` is also supported as an alternative parameter name
-- Works with HTMX navigation — links in dynamically loaded content are also rewritten
+- Works with HTMX navigation – links in dynamically loaded content are also rewritten
 - Combine with `?toc_position=hidden` to also hide the Table of Contents, useful for narrow iframe embeds
 - Combine with `?toc_position=left` or `?toc_position=right` to reposition the Table of Contents, useful for working with surrounding LMS navigation elements
 - Combine with `?edit_link=false` (or `?hidegitlink=true`) to hide the "Edit this Page" link on a per-page basis
@@ -88,7 +88,7 @@ Append `?embedded=true` to any page URL to display only the page content — no 
 ### Authoring & Customization
 - Git Sync plugin included for syncing reader content with GitHub, Codeberg, or similar Git hosting
 - Automatic "Edit this Page" link via the Helios theme, defaulting to **View Page Markdown** for open access to reader content; optionally configurable to direct editing for contributors with repository access
-- OER attribution block — display a CC license statement in the footer, drawn from reader home page frontmatter
+- OER attribution block – display a CC license statement in the footer, drawn from reader home page frontmatter
 - Customize CSS and JavaScript via the bundled plugin assets
 - Print stylesheet with page break control, absolute link URLs displayed inline, and consistent page margins across browsers
 
@@ -132,7 +132,7 @@ user/pages/
 Rename section folders to match your content, either in the Admin Panel or via FTP. The number prefix on each folder (e.g. `01.section-1/`) controls the order in the sidebar navigation.
 
 > [!TIP]
-> After adding, renaming, or removing a section folder, update `versioning.labels` in `user/config/themes/helios.yaml` (or via **Admin → Themes → Helios → Versioning → Version Labels**) to add the new folder name as a key — this sets the section name shown in the sidebar and browser tab title.
+> After adding, renaming, or removing a section folder, update `versioning.labels` in `user/config/themes/helios.yaml` (or via **Admin → Themes → Helios → Versioning → Version Labels**) to add the new folder name as a key – this sets the section name shown in the sidebar and browser tab title.
 
 ### Showing and Hiding Sections
 
@@ -237,7 +237,7 @@ The browser tab title is automatically formatted as:
 
 `Page Title | Reader Title | Site Title`
 
-The Reader Title is drawn from the reader home page title. The Site Title comes from `site.title` in `user/config/site.yaml`. Set the Site Title to your institution or author name — it serves as the top-level identifier in the browser tab.
+The Reader Title is drawn from the reader home page title. The Site Title comes from `site.title` in `user/config/site.yaml`. Set the Site Title to your institution or author name – it serves as the top-level identifier in the browser tab.
 
 ## Git Sync & Open Editing
 

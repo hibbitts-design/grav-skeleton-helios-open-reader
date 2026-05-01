@@ -1,7 +1,7 @@
 ---
-title: 'Open Education Essentials '
-subtitle: 'A Practical Guide for Educators'
-authors: 'Your Name'
+title: 'Grav Helios Open Reader'
+subtitle: 'A Guide to Publishing Web-First Readers and Course Materials'
+authors: HibbittsDesign.org
 edition: 'First Edition, 2026'
 license: 'CC BY 4.0'
 license_url: 'https://creativecommons.org/licenses/by/4.0/'
@@ -11,13 +11,11 @@ cards_per_row: '1'
 card_image_layout: side
 card_description_lines: '3'
 sitemap:
-    lastmod: '29-04-2026 14:22'
+    lastmod: '30-04-2026 10:00'
 media_order: viktor-forgacs-click-LNwIJHUtED4-unsplash.jpg
 section_label: Chapter
 ---
 
-Welcome to **Open Education Essentials** — a short, practical guide to understanding and applying open education principles in your teaching practice.
+Welcome to the **Grav Helios Open Reader Guide** – a complete walkthrough of publishing open readers with the Helios Open Reader plugin and [Grav Premium Helios theme](https://getgrav.org/premium/helios), from first install to a fully published reader.
 
-This reader covers the foundational ideas, practical tools, and real-world examples you need to get started with open educational resources (OER) and open course design.
-
-Work through the sections in order, or jump to any topic from the list below.
+Work through the sections in order, or jump to any topic from the cards below.
