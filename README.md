@@ -86,6 +86,7 @@ Helios Open Reader provides a ready-built open textbook or reader site using por
 
 ### Reader Structure
 - **Sections structure** — top-level folders named `section-N` are auto-detected as sections and render as section cards on the reader home
+- **Optional parts grouping** — rename section folders to `part-N-section-M` (e.g. `part-1-section-1`, `part-2-section-1`) to group sections into parts; part headings appear automatically on the reader home, and Prev/Next navigation and reading progress are scoped per part
 - **Section N header** — section pages automatically display their section number in the page header; inherits correctly for all sub-pages within a section. The label is configurable (e.g. Chapter, Project, Unit, Module) via **Admin → Pages → Reader Home → Section Label**
 - **Section sub-pages** — sections can contain any number of sub-pages, all shown in the sidebar and navigable with Prev/Next controls
 - Reader home page with cover image, title, subtitle, authors, edition, and CC license badge
@@ -180,6 +181,22 @@ Rename section folders to match your content, either in the Admin Panel or via F
 > [!TIP]
 > After adding, renaming, or removing a section folder, update `versioning.labels` in `user/config/themes/helios.yaml` (or via **Admin → Themes → Helios → Versioning → Version Labels**) to add the new folder name as a key — this sets the section name shown in the sidebar and browser tab title.
 
+### Grouping Sections into Parts
+
+To group sections into parts on the reader home page, use the `part-N-section-M` folder naming pattern instead of `section-N`:
+
+```
+user/pages/
+├── 00.reader/
+├── 01.part-1-section-1/    # Part 1, Section 1
+├── 02.part-1-section-2/    # Part 1, Section 2
+├── 03.part-2-section-1/    # Part 2, Section 1
+├── 04.part-2-section-2/    # Part 2, Section 2
+└── readme/
+```
+
+Parts are detected automatically — no additional configuration required. Part headings ("Part 1", "Part 2") appear above each group of section cards on the reader home page, Prev/Next navigation stops at part boundaries, and the reading progress indicator counts pages within the current part only. Update `versioning.labels` in `user/config/themes/helios.yaml` to use the new folder names as keys.
+
 ### Showing and Hiding Sections
 
 In the Admin panel, open the section folder and set **Published** to **Yes** to show or **No** to hide it. Unpublished sections are also excluded from search results and the sidebar.
@@ -213,6 +230,8 @@ The `reader.md` frontmatter controls the reader identity and card layout on the 
 | `start_button_text` | Label for the button linking to the first section (e.g. `Start Reading`, `Browse Projects`, `View Guides`). Leave empty to hide. |
 | `prev_next_position` | Where to display Prev/Next navigation on section pages: `both` (default), `top`, or `bottom` |
 | `show_oer_attribution` | Display the CC license and attribution text in the footer of every page (`true` or `false`) |
+| `section_label` | Label used for sections throughout the reader (e.g. `Chapter`, `Unit`). Leave empty to use the language default (`Section`). |
+| `part_label` | Label used for part headings on the reader home page when using the `part-N-section-M` folder naming pattern (e.g. `Volume`, `Unit`). Leave empty to use the default (`Part`). |
 | `cards_per_row` | Number of section cards per row (1–3) |
 | `card_icon` | Default icon for all cards (Tabler icon path) |
 | `card_image_layout` | Card image position: `side` or `top` |
@@ -279,7 +298,7 @@ versioning:
 
 ### Section Label
 
-The section label used throughout the reader (in page headers, cards, and the sidebar) can be set via **Admin → Pages → Reader Home → Section Label**. Leave it empty to use the language default. For multi-language sites, the per-language default is set via `SECTION_LABEL` in `user/plugins/helios-open-reader/languages.yaml`. English and French are included:
+The section label used throughout the reader (in page headers, cards, and the sidebar) can be set via **Admin → Pages → Reader Home → Section Label**. Leave it empty to use the language default.
 
 ```yaml
 en:
@@ -294,6 +313,10 @@ fr:
 ```
 
 To customize the label or add a language, update the relevant block in `user/plugins/helios-open-reader/languages.yaml`.
+
+### Part Label
+
+When sections are grouped into parts using the `part-N-section-M` folder naming pattern, the part heading label (default: `Part`) can be customized via **Admin → Pages → Reader Home → Part Label**. Leave it empty to use the default. Examples: `Volume`, `Unit`, `Module`.
 
 ## Browser Tab Title
 
