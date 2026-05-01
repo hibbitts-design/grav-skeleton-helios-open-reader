@@ -21,6 +21,7 @@ The `reader.md` frontmatter controls the reader identity and card layout on the 
 | `prev_next_position` | Where to display Prev/Next navigation on section pages: `both` (default), `top`, or `bottom` |
 | `show_oer_attribution` | Display the CC license and attribution text in the footer of every page (`true` or `false`) |
 | `section_label` | Label used for sections throughout the reader (e.g. `Chapter`, `Unit`, `Module`). Leave empty to use the language default. |
+| `part_label` | Label used for part headings on the reader home page when using the `part-N-section-M` folder naming pattern (e.g. `Volume`, `Unit`). Leave empty to use the default (`Part`). |
 | `cards_per_row` | Number of section cards per row (1–3) |
 | `card_icon` | Default icon for all cards (Tabler icon path) |
 | `card_image_layout` | Card image position: `side` or `top` |

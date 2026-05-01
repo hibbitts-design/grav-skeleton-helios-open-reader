@@ -23,6 +23,36 @@ Rename section folders to match your content, either in the Admin Panel or via F
 > [!TIP]
 > After adding, renaming, or removing a section folder, update `versioning.labels` in `user/config/themes/helios.yaml` (or via **Admin → Themes → Helios → Versioning → Version Labels**) to add the new folder name as a key – this sets the section name shown in the sidebar and browser tab title.
 
+## Grouping Sections into Parts
+
+To group sections into parts on the reader home page, use the `part-N-section-M` folder naming pattern instead of `section-N`:
+
+```
+user/pages/
+├── 00.reader/
+├── 01.part-1-section-1/    # Part 1, Section 1
+├── 02.part-1-section-2/    # Part 1, Section 2
+├── 03.part-2-section-1/    # Part 2, Section 1
+├── 04.part-2-section-2/    # Part 2, Section 2
+└── readme/
+```
+
+Parts are detected automatically — no additional configuration required. Part headings ("Part 1", "Part 2") appear above each group of section cards on the reader home page, Prev/Next navigation stops at part boundaries, and the reading progress indicator counts pages within the current part only.
+
+Update `versioning.labels` in `user/config/themes/helios.yaml` to use the new folder names as keys:
+
+```yaml
+versioning:
+  labels:
+    part-1-section-1: 'Introduction'
+    part-1-section-2: 'Core Concepts'
+    part-2-section-1: 'Advanced Topics'
+    part-2-section-2: 'Publishing & Sharing'
+```
+
+> [!TIP]
+> The `version_pattern` in `user/config/themes/helios.yaml` detects both `section-N` and `part-N-section-M` folder names automatically — no change to the pattern is needed when switching to parts.
+
 ## Showing and Hiding Sections
 
 In the Admin panel, open the section folder and set **Published** to **Yes** to show or **No** to hide it. Unpublished sections are also excluded from search results and the sidebar.
