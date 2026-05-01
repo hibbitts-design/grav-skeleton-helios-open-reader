@@ -62,7 +62,7 @@ Grav Helios Open Reader is a strong fit when you:
 
 - Want a web-first open textbook, course reader, or OER publication with a clean reading experience and proper CC licensing
 - Need a structured reader layout with sections and sub-pages, auto-detected from your folder naming
-- Want pedagogical callouts (Learning Objectives, Key Takeaways, Examples, Exercises, Definitions, Reflections, Case Studies) without coding
+- Want callout blocks (Learning Objectives, Key Takeaways, Examples, Exercises, Definitions, Reflections, Case Studies) without coding
 - Need to embed reader pages directly into an LMS (Canvas, Moodle, Brightspace) as clean iframes, with flexible Table of Contents positioning
 - Want a Save My Place feature so readers can return to where they left off
 - Want collaborative open authoring — invite readers to view source and suggest improvements via GitHub or Codeberg
@@ -82,7 +82,7 @@ Still unsure? Install the skeleton package on almost any Web server, replace the
 
 ## Features
 
-Helios Open Reader provides a ready-built open textbook or reader site using portable Markdown files you fully control. Highlights include a configurable sections structure, a full set of pedagogical callouts, Save My Place navigation, and optional Git Sync for open collaborative authoring.
+Helios Open Reader provides a ready-built open textbook or reader site using portable Markdown files you fully control. Highlights include a configurable sections structure, a full set of callout blocks, Save My Place navigation, and optional Git Sync for open collaborative authoring.
 
 ### Reader Structure
 - **Sections structure** — top-level folders named `section-N` are auto-detected as sections and render as section cards on the reader home
@@ -90,7 +90,7 @@ Helios Open Reader provides a ready-built open textbook or reader site using por
 - **Section sub-pages** — sections can contain any number of sub-pages, all shown in the sidebar and navigable with Prev/Next controls
 - Reader home page with cover image, title, subtitle, authors, edition, and CC license badge
 
-### Pedagogical Callouts
+### callout blocks
 - **Learning Objectives** — `[objectives]...[/objectives]` (green); also available as frontmatter (`learning_objectives:`) for automatic rendering at the top of a section page
 - **Key Takeaways** — `[key-takeaways]...[/key-takeaways]` (blue)
 - **Example** — `[example]...[/example]` (purple)
@@ -309,7 +309,7 @@ If you prefer not to write Markdown directly, the optional [Grav Premium Editor 
 
 ## Included Plugin: Helios Open Reader
 
-Custom CSS, JavaScript, shortcodes, pedagogical callouts, and Helios-inspired Admin Panel styling for the Helios Open Reader skeleton. If the Helios theme is not installed, the plugin automatically falls back to the Quark or Quark2 theme so the frontend site remains viewable, redirecting to the License Manager page in the Admin panel.
+Custom CSS, JavaScript, shortcodes, callout blocks, and Helios-inspired Admin Panel styling for the Helios Open Reader skeleton. If the Helios theme is not installed, the plugin automatically falls back to the Quark or Quark2 theme so the frontend site remains viewable, redirecting to the License Manager page in the Admin panel.
 
 ### Plugin Settings
 
