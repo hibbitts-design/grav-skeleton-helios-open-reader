@@ -6,25 +6,25 @@
 
 <p><em>Publish open textbooks, course readers, student projects, and other OER on the web – with content in portable Markdown files you fully control.</em></p>
 
-[![Grav Discord Chat](https://img.shields.io/discord/501836936584101899.svg?logo=discord&colorB=728ADA&label=Grav%20Discord%20Chat)](https://chat.getgrav.org) [![Latest Release](https://img.shields.io/github/v/release/hibbitts-design/grav-skeleton-helios-open-reader?style=flat-square&label=Release)](https://github.com/paulhibbitts/grav-skeleton-helios-open-reader/releases/latest) [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://github.com/paulhibbitts/grav-skeleton-helios-open-reader/blob/master/LICENSE) [![PHP](https://img.shields.io/badge/PHP-%3E%3D8.0-8892BF?style=flat-square&logo=php&logoColor=white)](https://learn.getgrav.org/17/basics/requirements)
+[![Grav Discord Chat](https://img.shields.io/discord/501836936584101899.svg?logo=discord&colorB=728ADA&label=Grav%20Discord%20Chat)](https://chat.getgrav.org) [![Latest Release](https://img.shields.io/github/v/release/hibbitts-design/grav-skeleton-helios-open-reader?style=flat-square&label=Release)](https://github.com/hibbitts-design/grav-skeleton-helios-open-reader/releases/latest) [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://github.com/hibbitts-design/grav-skeleton-helios-open-reader/blob/master/LICENSE) [![PHP](https://img.shields.io/badge/PHP-%3E%3D8.0-8892BF?style=flat-square&logo=php&logoColor=white)](https://learn.getgrav.org/17/basics/requirements)
 
 <p>A free, open-source plugin that transforms the <a href="https://getgrav.org/premium/helios">Grav Premium Helios theme</a> into a web-first open textbook and reader platform, built on <a href="https://getgrav.org">Grav CMS</a> with Markdown file-based content, a built-in Admin panel, and no database required. Purchasing the Helios theme also directly supports Grav's open-source development.</p>
 
 <table>
   <tr>
     <td width="49%">
-      <a href="https://raw.githubusercontent.com/paulhibbitts/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-1.png">
+      <a href="https://raw.githubusercontent.com/hibbitts-design/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-1.png">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/paulhibbitts/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-1-dark.png">
-        <img alt="Reader home page with cover image, section cards, and Start Reading button" src="https://raw.githubusercontent.com/paulhibbitts/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-1.png" width="100%">
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hibbitts-design/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-1-dark.png">
+        <img alt="Reader home page with cover image, section cards, and Start Reading button" src="https://raw.githubusercontent.com/hibbitts-design/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-1.png" width="100%">
       </picture>
       </a>
     </td>
     <td width="49%">
-      <a href="https://raw.githubusercontent.com/paulhibbitts/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-2.png">
+      <a href="https://raw.githubusercontent.com/hibbitts-design/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-2.png">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/paulhibbitts/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-2-dark.png">
-        <img alt="Section reading page with sidebar navigation and Section N header" src="https://raw.githubusercontent.com/paulhibbitts/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-2.png" width="100%">
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hibbitts-design/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-2-dark.png">
+        <img alt="Section reading page with sidebar navigation and Section N header" src="https://raw.githubusercontent.com/hibbitts-design/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-2.png" width="100%">
       </picture>
       </a>
     </td>
@@ -36,13 +36,13 @@
   <tr><td colspan="2">&nbsp;</td></tr>
   <tr>
     <td width="49%">
-      <a href="https://raw.githubusercontent.com/paulhibbitts/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-admin-1.png">
-      <img alt="Admin Panel pages overview showing reader content tree" src="https://raw.githubusercontent.com/paulhibbitts/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-admin-1.png" width="100%">
+      <a href="https://raw.githubusercontent.com/hibbitts-design/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-admin-1.png">
+      <img alt="Admin Panel pages overview showing reader content tree" src="https://raw.githubusercontent.com/hibbitts-design/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-admin-1.png" width="100%">
       </a>
     </td>
     <td width="49%">
-      <a href="https://raw.githubusercontent.com/paulhibbitts/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-admin-2.png">
-      <img alt="Admin Panel section page editor with frontmatter fields" src="https://raw.githubusercontent.com/paulhibbitts/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-admin-2.png" width="100%">
+      <a href="https://raw.githubusercontent.com/hibbitts-design/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-admin-2.png">
+      <img alt="Admin Panel section page editor with frontmatter fields" src="https://raw.githubusercontent.com/hibbitts-design/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-admin-2.png" width="100%">
       </a>
     </td>
   </tr>
