@@ -53,6 +53,16 @@ versioning:
 > [!TIP]
 > The `version_pattern` in `user/config/themes/helios.yaml` detects both `section-N` and `part-N-section-M` folder names automatically — no change to the pattern is needed when switching to parts.
 
+To use custom titles for individual parts instead of the auto-generated "Part 1", "Part 2" labels, add a `parts` block to the `reader.md` frontmatter:
+
+```yaml
+parts:
+  - id: part-1
+    label: 'Foundations of Open Education'
+  - id: part-2
+    label: 'Applying Open Practices'
+```
+
 ## Showing and Hiding Sections
 
 In the Admin panel, open the section folder and set **Published** to **Yes** to show or **No** to hide it. Unpublished sections are also excluded from search results and the sidebar.
