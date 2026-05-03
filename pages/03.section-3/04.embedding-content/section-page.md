@@ -13,11 +13,12 @@ Helios Open Reader includes shortcodes for embedding rich content responsively, 
 ```
 [/raw]
 
-Embeds any URL in a responsive 16:9 container. Optionally set a different ratio:
+Embeds any URL in a responsive 16:9 container. Add a `title` for accessibility (recommended), and optionally set a different ratio:
 
 [raw]
 ```
-[iframe url="https://example.com" ratio="4:3"]
+[iframe url="https://example.com" title="My embedded content"]
+[iframe url="https://example.com" title="My embedded content" ratio="4:3"]
 ```
 [/raw]
 
@@ -25,7 +26,7 @@ Embeds any URL in a responsive 16:9 container. Optionally set a different ratio:
 
 [raw]
 ```
-[googleslides url="https://docs.google.com/presentation/d/..."]
+[googleslides url="https://docs.google.com/presentation/d/..." title="Introduction slides"]
 ```
 [/raw]
 
@@ -35,7 +36,7 @@ Embeds a Google Slides presentation responsively. Paste the "Publish to the web"
 
 [raw]
 ```
-[pdf url="https://example.com/document.pdf"]
+[pdf url="https://example.com/document.pdf" title="Course reading"]
 ```
 [/raw]
 
@@ -43,7 +44,7 @@ Displays a PDF via Google Docs viewer. Default ratio is 16:9. For letter or A4 d
 
 [raw]
 ```
-[pdf url="https://example.com/document.pdf" ratio="portrait"]
+[pdf url="https://example.com/document.pdf" title="Course reading" ratio="portrait"]
 ```
 [/raw]
 
@@ -53,7 +54,7 @@ Embed via full URL:
 
 [raw]
 ```
-[h5p url="https://h5p.org/h5p/embed/123"]
+[h5p url="https://h5p.org/h5p/embed/123" title="Interactive quiz"]
 ```
 [/raw]
 
@@ -61,7 +62,7 @@ Or via Content ID (requires **H5P Content Embed Source URL** to be set in plugin
 
 [raw]
 ```
-[h5p id="123"]
+[h5p id="123" title="Interactive quiz"]
 ```
 [/raw]
 
@@ -76,4 +77,4 @@ Or via Content ID (requires **H5P Content Embed Source URL** to be set in plugin
 Renders an Embedly card with dark mode support. Useful for embedding links to articles, videos, and other web content with rich previews.
 
 > [!TIP]
-> All embed shortcodes are responsive by default. The 16:9 ratio works well for video content and slides; use `ratio="portrait"` for PDF documents and `ratio="4:3"` for older slide formats.
+> All embed shortcodes are responsive by default. Always add a descriptive `title` parameter to iframe-based shortcodes (`[iframe]`, `[googleslides]`, `[pdf]`, `[h5p]`) — this sets the iframe's accessible title for screen readers. The 16:9 ratio works well for video content and slides; use `ratio="portrait"` for PDF documents and `ratio="4:3"` for older slide formats.
