@@ -54,7 +54,7 @@ Helios Open Reader provides a ready-built site for open educational content – 
 - **Case Study** – `[case-study]...[/case-study]` (red)
 - **Announcement** – `[announcement]...[/announcement]` (purple by default; configurable type)
 - **Project Brief** – `[project-brief]...[/project-brief]` (amber); frames the assignment or challenge prompt
-- **Feedback Requested** – `[feedback-requested]...[/feedback-requested]` (purple); flags content awaiting review – useful in student projects and draft OER alike
+- **Feedback Requested** – `[feedback-requested]...[/feedback-requested]` (purple); flags content awaiting review — useful in student projects and draft OER alike
 - **Process Note** – `[process-note]...[/process-note]` (blue); documents iterations, decisions, or pivots during a project
 - All callouts accept an optional `title="..."` parameter and support Markdown content
 - Five built-in GitHub-style callouts: `> [!NOTE]`, `> [!TIP]`, `> [!IMPORTANT]`, `> [!WARNING]`, `> [!CAUTION]`
@@ -122,8 +122,8 @@ All reader content lives within `user/pages/`. The skeleton ships with a reader 
 
 ```
 user/pages/
-├── 00.reader/              # Reader home page
-│   └── reader.md           # Reader title, subtitle, authors, edition, license, cover image
+├── 00.sections/              # Reader home page
+│   └── section-list.md           # Reader title, subtitle, authors, edition, license, cover image
 ├── 01.section-1/           # Section 1 (published by default)
 │   ├── section-page.md     # Section settings (section_number, description, icon, learning_objectives)
 │   ├── 01.section-one/     # Sub-page (also uses section-page.md)
@@ -156,7 +156,7 @@ To add a section, copy an existing section folder (e.g. `01.section-1/`) via FTP
 
 ## Reader Home Settings
 
-The `reader.md` frontmatter controls the reader identity and card layout on the home page. These fields can be set in the Admin Panel by opening the reader home page.
+The `section-list.md` frontmatter controls the reader identity and card layout on the home page. These fields can be set in the Admin Panel by opening the reader home page.
 
 | Field | Description |
 |-------|-------------|
@@ -179,7 +179,7 @@ The `reader.md` frontmatter controls the reader identity and card layout on the 
 | `card_image_layout` | Card image position: `side` or `top` |
 | `card_description_lines` | Maximum description lines per card (2, 3, or 0 for no limit) |
 
-Page content written in `reader.md` appears above the cards by default. To also display content **below** the cards, add `===` on its own line as a delimiter:
+Page content written in `section-list.md` appears above the cards by default. To also display content **below** the cards, add `===` on its own line as a delimiter:
 
 ```markdown
 This text appears above the section cards.
@@ -208,7 +208,7 @@ The `section-page.md` frontmatter controls each section's landing page and card 
 
 ### Reader Title
 
-The title displayed in the browser tab and header comes from the `title` field in `reader.md`. Edit it via **Admin → Pages → Reader Home**, or directly in `user/pages/00.reader/reader.md`.
+The title displayed in the browser tab and header comes from the `title` field in `section-list.md`. Edit it via **Admin → Pages → Reader Home**, or directly in `user/pages/00.sections/section-list.md`.
 
 ### Section Label
 
@@ -232,7 +232,7 @@ fr:
 
 When sections are grouped into parts using the `part-N-section-M` folder naming pattern, the part heading label (default: `Part`) can be customized via **Admin → Pages → Reader Home → Part Label**. Leave it empty to use the default. Examples: `Theme`, `Project`.
 
-To use custom titles for individual parts instead of the auto-generated "Part 1", "Part 2" labels, add a `parts` block to `reader.md` frontmatter:
+To use custom titles for individual parts instead of the auto-generated "Part 1", "Part 2" labels, add a `parts` block to `section-list.md` frontmatter:
 
 ```yaml
 parts:
@@ -305,7 +305,7 @@ All callouts accept an optional `title="..."` parameter and support Markdown con
 - [raw]`[announcement]...[/announcement]`[/raw] – Announcement notice (purple by default), supports Markdown
 - [raw]`[announcement title="..." type="..."]...[/announcement]`[/raw] – With optional custom title and type (`note`, `tip`, `important`, `warning`, `caution`)
 - [raw]`[project-brief]...[/project-brief]`[/raw] – Project Brief block (amber); frames the assignment or challenge prompt
-- [raw]`[feedback-requested]...[/feedback-requested]`[/raw] – Feedback Requested block (purple); flags content awaiting review – useful in student projects and draft OER alike
+- [raw]`[feedback-requested]...[/feedback-requested]`[/raw] – Feedback Requested block (purple); flags content awaiting review — useful in student projects and draft OER alike
 - [raw]`[process-note]...[/process-note]`[/raw] – Process Note block (blue); documents iterations, decisions, or pivots during a project
 - [raw]`[iframe url="..."]`[/raw] – Responsive iframe embed, 16:9 by default
 - [raw]`[googleslides url="..."]`[/raw] – Responsive Google Slides embed, 16:9 by default

@@ -165,8 +165,8 @@ All reader content lives within `user/pages/`. The skeleton ships with a reader 
 
 ```
 user/pages/
-├── 00.reader/              # Reader home page
-│   └── reader.md           # Reader title, subtitle, authors, edition, license, cover image
+├── 00.sections/              # Reader home page
+│   └── section-list.md           # Reader title, subtitle, authors, edition, license, cover image
 ├── 01.section-1/           # Section 1 (published by default)
 │   ├── section-page.md     # Section settings (section_number, description, icon, learning_objectives)
 │   ├── 01.section-one/     # Sub-page (also uses section-page.md)
@@ -187,7 +187,7 @@ To group sections into parts on the reader home page, use the `part-N-section-M`
 
 ```
 user/pages/
-├── 00.reader/
+├── 00.sections/
 ├── 01.part-1-section-1/    # Part 1, Section 1
 ├── 02.part-1-section-2/    # Part 1, Section 2
 ├── 03.part-2-section-1/    # Part 2, Section 1
@@ -197,7 +197,7 @@ user/pages/
 
 Parts are detected automatically — no additional configuration required. Part headings ("Part 1", "Part 2") appear above each group of section cards on the reader home page, Prev/Next navigation stops at part boundaries, and the reading progress indicator counts pages within the current part only. Update `versioning.labels` in `user/config/themes/helios.yaml` to use the new folder names as keys.
 
-To use custom part titles instead of the auto-generated "Part 1", "Part 2" labels, add a `parts` block to `reader.md`:
+To use custom part titles instead of the auto-generated "Part 1", "Part 2" labels, add a `parts` block to `section-list.md`:
 
 ```yaml
 parts:
@@ -225,7 +225,7 @@ To add a section, copy an existing section folder (e.g. `01.section-1/`) via FTP
 
 ## Reader Home Settings
 
-The `reader.md` frontmatter controls the reader identity and card layout on the home page. These fields can be set in the Admin Panel by opening the reader home page.
+The `section-list.md` frontmatter controls the reader identity and card layout on the home page. These fields can be set in the Admin Panel by opening the reader home page.
 
 | Field | Description |
 |-------|-------------|
@@ -248,7 +248,7 @@ The `reader.md` frontmatter controls the reader identity and card layout on the 
 | `card_image_layout` | Card image position: `side` or `top` |
 | `card_description_lines` | Maximum description lines per card (2, 3, or 0 for no limit) |
 
-Page content written in `reader.md` appears above the cards by default. To also display content **below** the cards, add `===` on its own line as a delimiter:
+Page content written in `section-list.md` appears above the cards by default. To also display content **below** the cards, add `===` on its own line as a delimiter:
 
 ```markdown
 This text appears above the section cards.
@@ -293,7 +293,7 @@ learning_objectives: |
 
 ### Reader Title
 
-The reader title displayed in the browser tab and header comes from the `title` field in `reader.md`. Edit it via **Admin → Pages → Reader Home**, or directly in `user/pages/00.reader/reader.md`.
+The reader title displayed in the browser tab and header comes from the `title` field in `section-list.md`. Edit it via **Admin → Pages → Reader Home**, or directly in `user/pages/00.sections/section-list.md`.
 
 ### Section Names
 
@@ -370,7 +370,7 @@ The following settings are available in the Admin panel under **Plugins → Heli
 > **Note:** To apply the Helios-inspired Admin Panel colour scheme (zinc nav, accessible blue links, muted purple accents), go to **Admin → Customization → Presets**, select **Helios**, and click **Save**.
 
 ### Templates
-- **reader** – Reader home template displaying the reader header, resume reading strip, and section card grid
+- **section-list** – Reader home template displaying the reader header, resume reading strip, and section card grid
 - **section-page** – Section reading page with configurable section N header, optional Learning Objectives block from frontmatter, and main content
 - **default-toc** – Content page with a right-column Table of Contents; set `template: default-toc` in any page's frontmatter to enable (requires the page-toc plugin, included)
 
