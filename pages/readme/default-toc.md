@@ -242,6 +242,9 @@ parts:
     label: 'Applying Open Practices'
 ```
 
+> [!TIP]
+> After switching to the `part-N-section-M` folder naming pattern, update `versioning.labels` in `user/config/themes/helios.yaml` (or via **Admin → Themes → Helios → Versioning → Version Labels**) to add the new folder names as keys — this ensures section labels display correctly in the sidebar and browser tab title.
+
 ### Section Names
 
 The individual section name shown in the sidebar, the section dropdown (when enabled), and as the middle segment of the browser tab title (`Page Title | Reader Title | Site Title`) comes from the `versioning.labels` setting in the Helios Theme config. These can be edited via **Admin → Themes → Helios → Versioning tab → Version Labels**, or directly in `user/config/themes/helios.yaml`:

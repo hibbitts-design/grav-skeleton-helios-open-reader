@@ -5,7 +5,7 @@ description: 'Customizing the reader title, section names, section label, and br
 
 ## Reader Title
 
-The reader title displayed in the browser tab and header comes from the `title` field in `reader.md`. Edit it via **Admin → Pages → Reader Home**, or directly in `user/pages/00.reader/reader.md`.
+The reader title displayed in the browser tab and header comes from the `title` field in `section-list.md`. Edit it via **Admin → Pages → Reader Home**, or directly in `user/pages/00.sections/section-list.md`.
 
 ## Section Names
 

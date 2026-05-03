@@ -11,7 +11,7 @@ A statement that identifies the author, title, and license of an openly licensed
 
 The OER attribution block displays a CC license statement in the footer of every page, drawn from the reader home page frontmatter. Enable it via **Admin → Pages → Reader Home → OER Attribution tab → Show OER Attribution Block**.
 
-The relevant frontmatter fields in `reader.md`:
+The relevant frontmatter fields in `section-list.md`:
 
 | Field | Example |
 |-------|---------|

@@ -7,8 +7,8 @@ All reader content lives within `user/pages/`. The skeleton ships with a reader 
 
 ```
 user/pages/
-├── 00.reader/              # Reader home page
-│   └── reader.md           # Reader title, subtitle, authors, edition, license, cover image
+├── 00.sections/              # Reader home page
+│   └── section-list.md           # Reader title, subtitle, authors, edition, license, cover image
 ├── 01.section-1/           # Section 1 (published by default)
 │   ├── section-page.md     # Section settings (section_number, description, icon, learning_objectives)
 │   ├── 01.section-one/     # Sub-page (also uses section-page.md)
@@ -29,7 +29,7 @@ To group sections into parts on the reader home page, use the `part-N-section-M`
 
 ```
 user/pages/
-├── 00.reader/
+├── 00.sections/
 ├── 01.part-1-section-1/    # Part 1, Section 1
 ├── 02.part-1-section-2/    # Part 1, Section 2
 ├── 03.part-2-section-1/    # Part 2, Section 1
@@ -53,7 +53,7 @@ versioning:
 > [!TIP]
 > The `version_pattern` in `user/config/themes/helios.yaml` detects both `section-N` and `part-N-section-M` folder names automatically — no change to the pattern is needed when switching to parts.
 
-To use custom titles for individual parts instead of the auto-generated "Part 1", "Part 2" labels, add a `parts` block to the `reader.md` frontmatter:
+To use custom titles for individual parts instead of the auto-generated "Part 1", "Part 2" labels, add a `parts` block to the `section-list.md` frontmatter:
 
 ```yaml
 parts:
