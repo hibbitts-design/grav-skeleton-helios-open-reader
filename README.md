@@ -78,7 +78,7 @@ Other publishing tools might be better candidates when you:
 - Need zero-server, instant publishing directly from GitHub without any hosting setup
 - Prefer a large ecosystem of themes and plugins beyond what Grav currently offers
 
-Still unsure? Install the skeleton package on almost any Web server, replace the demo content with your own, and your reader is ready. Your content stays in portable Markdown files you own completely, and those same files work with other tools if your needs change. For zero-setup publishing directly from GitHub or Codeberg without a Web server, [Docsify-This](https://docsify-this.net) is a natural companion.
+Still unsure? Install the skeleton package on almost any Web server, add your [Grav Premium Helios theme](https://getgrav.org/premium/helios) license, replace the demo content with your own, and your reader is ready. Your content stays in portable Markdown files you own completely, and those same files work with other tools if your needs change. For zero-setup publishing directly from GitHub or Codeberg without a Web server, [Docsify-This](https://docsify-this.net) is a natural companion.
 
 ## Features
 
@@ -372,7 +372,7 @@ The following settings are available in the Admin panel under **Plugins → Heli
 | Repository Host | `github.com` | Repository hosting service for the Helios GitHub Integration (`github.com` or `codeberg.org`) |
 | H5P Content Embed Source URL | `https://h5p.org/h5p/embed/` | Base URL for H5P embeds via Content ID (used with `[h5p id="..."]`) |
 
-> **Note:** To apply the Helios-inspired Admin Panel colour scheme (zinc nav, accessible blue links, muted purple accents), go to **Admin → Customization → Presets**, select **Helios**, and click **Save**. Also compatible with the new Admin 2 panel, where larger font sizes improve readability without applying Helios-inspired theming.
+> **Note:** To apply the Helios-inspired Admin Panel 1.7 colour scheme (zinc nav, accessible blue links, muted purple accents), go to **Admin → Customization → Presets**, select **Helios**, and click **Save**. Also compatible with the new Admin 2 panel, where larger font sizes improve readability without applying Helios-inspired theming.
 
 ### Templates
 - **section-list** – Reader home template displaying the reader header, resume reading strip, and section card grid
