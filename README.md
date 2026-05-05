@@ -139,6 +139,8 @@ Append `?embedded=true` to any page URL to display only the page content — no 
 
 ## Quick Start
 
+Helios Open Reader is best suited for authors and educators comfortable with web hosting and folder-based content structure. An online Admin panel is included for browser-based editing – no code editor required.
+
 The skeleton is a **complete package** – Grav CMS, the Helios Open Reader plugin, and demo content are all included; the [Grav Premium Helios theme](https://getgrav.org/premium/helios) requires a separate license. The home page is a reader landing page showing demo sections.
 
 ### Pre-flight Checklist
