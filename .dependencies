@@ -35,6 +35,10 @@ git:
         url: https://github.com/trilbymedia/grav-plugin-git-sync
         path: user/plugins/git-sync
         branch: main
+    helios-open-reader:
+        url: https://github.com/hibbitts-design/grav-skeleton-helios-open-reader
+        path: user/plugins/helios-open-reader
+        branch: main
     license-manager:
         url: https://github.com/getgrav/grav-plugin-license-manager
         path: user/plugins/license-manager
