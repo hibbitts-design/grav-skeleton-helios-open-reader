@@ -7,8 +7,6 @@ data/*
 !data/.*
 plugins/*
 !plugins/.*
-!plugins/helios-open-reader/
-!plugins/helios-open-reader/**
 !themes/helios/.*
 themes/helios/*
 !themes/quark/.*
