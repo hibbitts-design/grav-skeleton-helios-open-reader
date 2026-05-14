@@ -29,7 +29,12 @@ header:
       route: /readme
       label: ReadMe
       external: '0'
-custom_favicon: {  }
+custom_favicon:
+  favicon.svg:
+    name: favicon.svg
+    type: image/svg+xml
+    size: 580
+    path: user/assets/helios/favicon.svg
 sidebar:
   powered_by: '0'
 navigation:
