@@ -56,6 +56,14 @@
 
 A complete, pre-configured package for publishing open textbooks, course readers, and OER publications on the web — a place to openly share reading material that you keep and control. Content is stored as simple Markdown files with a built-in Admin panel for browser-based editing and no database required. Runs on nearly any web hosting service.
 
+## What Sets It Apart
+
+- **Readers never lose their place** — Save My Place records the last page visited and surfaces a Continue Reading strip on return. Few open reader tools do this at all.
+- **Embeds cleanly into any LMS** — one URL parameter displays content only, without surrounding navigation; internal links carry it forward automatically. Works with Canvas, Moodle, and Brightspace.
+- **No build pipeline, ever** — edit in the browser-based Admin panel and changes go live immediately. No commit → push → build → deploy cycle.
+- **Open collaborative authoring built in** — Git Sync keeps content in sync with a GitHub or Codeberg repository automatically, with no build cycle. Collaborators contribute via Git; anyone else can propose changes through the repository interface.
+- **Plain text export for open access** — optionally publish all reader content as structured plain text, portable and format-neutral, ready for search indexing, ebook pipelines, and any tool that can read a URL.
+
 ## When is Grav Helios Open Reader a Good Candidate?
 
 Grav Helios Open Reader is a strong fit when you:
