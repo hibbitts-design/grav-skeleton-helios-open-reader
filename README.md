@@ -8,7 +8,7 @@
 
 [![Grav Discord Chat](https://img.shields.io/discord/501836936584101899.svg?logo=discord&colorB=728ADA&label=Grav%20Discord%20Chat)](https://chat.getgrav.org) [![Latest Release](https://img.shields.io/github/v/release/hibbitts-design/grav-skeleton-helios-open-reader?style=flat-square&label=Release)](https://github.com/hibbitts-design/grav-skeleton-helios-open-reader/releases/latest) [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://github.com/hibbitts-design/grav-skeleton-helios-open-reader/blob/master/LICENSE) [![PHP](https://img.shields.io/badge/PHP-%3E%3D8.0-8892BF?style=flat-square&logo=php&logoColor=white)](https://learn.getgrav.org/17/basics/requirements)
 
-<p>A free, open-source plugin that transforms the <a href="https://getgrav.org/premium/helios">Grav Premium Helios theme</a> into a web-first open textbook and reader platform, built on <a href="https://getgrav.org">Grav CMS</a> with Markdown file-based content, a built-in Admin panel, and no database required. Purchasing the Helios theme also directly supports Grav's open-source development.</p>
+<p>A free, open-source skeleton that transforms the <a href="https://getgrav.org/premium/helios">Grav Premium Helios theme</a> into a web-first open textbook and reader platform, built on <a href="https://getgrav.org">Grav CMS</a> with Markdown file-based content, a built-in Admin panel, and no database required. Purchasing the Helios theme also directly supports Grav's open-source development.</p>
 
 <table>
   <tr>
@@ -54,28 +54,26 @@
 
 </div>
 
-A complete, pre-configured package for publishing open textbooks, course readers, and OER publications on the web — a place to openly share reading material that you keep and control. Content is stored as simple Markdown files with a built-in Admin panel for browser-based editing and no database required. Runs on nearly any web hosting service.
+A complete, pre-configured package for publishing open textbooks, course readers, and OER publications on the web — a place to openly share reading material that you keep and control. Runs on nearly any web hosting service.
 
 ## What Sets It Apart
 
-- **Readers never lose their place** — Save My Place records the last page visited and surfaces a Continue Reading strip on return. Few open reader tools do this at all.
-- **Embeds cleanly into any LMS** — one URL parameter displays content only, without surrounding navigation; internal links carry it forward automatically. Works with Canvas, Moodle, and Brightspace.
-- **No build pipeline, ever** — edit in the browser-based Admin panel and changes go live immediately. No commit → push → build → deploy cycle.
-- **Open collaborative authoring built in** — Git Sync keeps content in sync with a GitHub or Codeberg repository automatically, with no build cycle. Collaborators contribute via Git; anyone else can propose changes through the repository interface.
+- **Built for open education from the ground up** — CC license display, OER attribution footer, callout blocks (Learning Objectives, Key Takeaways, Examples, Exercises), and a section structure designed for course reading — not repurposed from a software documentation tool.
+- **Readers never lose their place** — Save My Place records the last page visited and surfaces a "Continue reading" strip on return. Most open textbook and reader platforms don't offer this at all.
+- **Content you own and can take anywhere** — everything lives as portable Markdown files on your server, not locked in a platform's database like most established open textbook tools. Switch tools, migrate hosts, or open a pull request — your content travels with you, not with the platform.
+- **Embeds cleanly into any LMS** — one URL parameter displays content only, without surrounding navigation; internal links carry it forward automatically. No LTI configuration or institutional integration required.
+- **No build pipeline, ever** — edit in the browser-based Admin panel and changes go live immediately. Unlike static site generators for open textbooks, there's nothing to install locally and no commit → push → build → deploy cycle.
+- **A CMS and Git, not a choice between them** — most platforms give you one or the other: a browser editor that locks content in a database, or a Git workflow that requires technical setup. Helios Open Reader gives you both: browser-based editing and automatic Git Sync with GitHub or Codeberg.
 - **Plain text export for open access** — optionally publish all reader content as structured plain text, portable and format-neutral, ready for search indexing, ebook pipelines, and any tool that can read a URL.
 
 ## When is Grav Helios Open Reader a Good Candidate?
 
 Grav Helios Open Reader is a strong fit when you:
 
-- Want a web-first open textbook, course reader, or OER publication with a clean reading experience and proper CC licensing
 - Need a structured reader layout with sections and sub-pages, auto-detected from your folder naming
 - Want callout blocks (Learning Objectives, Key Takeaways, Examples, Exercises, Definitions, Reflections, Case Studies) without coding
 - Need to embed reader pages directly into an LMS (Canvas, Moodle, Brightspace) as clean iframes, with flexible Table of Contents positioning
-- Want a Save My Place feature so readers can return to where they left off
-- Want collaborative open authoring — invite readers to view source and suggest improvements via GitHub or Codeberg
 - Need rich content embedding (H5P, iFrames, Google Slides, PDFs, Embedly) without coding
-- Value keeping content in portable Markdown files with full ownership and hosting control
 - Want dark mode, mobile-friendly design, and keyboard-accessible navigation out of the box
 
 Other publishing tools might be better candidates when you:
