@@ -18,6 +18,6 @@ prev_next_position: both
 show_oer_attribution: true
 ---
 
-Welcome to the **Grav Helios Open Reader** – a complete walkthrough of publishing open textbooks and readers on the web with the Helios Open Reader plugin and [Grav Premium Helios theme](https://getgrav.org/premium/helios).
+Welcome to the **Grav Helios Open Reader** – a guide to publishing open textbooks and readers on the web with the Helios Open Reader plugin and [Grav Premium Helios theme](https://getgrav.org/premium/helios).
 
 Work through the sections in order, or jump to any topic from the cards below.
