@@ -1,6 +1,6 @@
 ---
 title: 'Grav Helios Open Reader'
-subtitle: 'A Guide to Publishing Web-First Readers and Course Materials'
+subtitle: 'A Guide to Publishing Open Textbooks and Readers on the Web'
 authors: HibbittsDesign.org
 edition: 'First Edition, 2026'
 license: 'CC BY 4.0'
