@@ -1,9 +1,17 @@
+# v0.9.4
+## 05/18/2026
+
+1. [](#improved)
+    * Updated screenshot
+
 # v0.9.3
 ## 05/18/2026
 
 1. [](#new)
     * Add notebook favicon matching site icon
     * Add footnote examples to OER attribution sample page
+
+1. [](#improved)
     * Updated with latest Helios Open Reader plugin
 
 # v0.9.2
