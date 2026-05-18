@@ -4,6 +4,7 @@
 1. [](#new)
     * Add notebook favicon matching site icon
     * Add footnote examples to OER attribution sample page
+    * Updated with latest Helios Open Reader plugin
 
 # v0.9.2
 ## 05/13/2026
