@@ -3,6 +3,7 @@
 
 1. [](#new)
     * Add notebook favicon matching site icon
+    * Add footnote examples to OER attribution sample page
 
 # v0.9.2
 ## 05/13/2026
