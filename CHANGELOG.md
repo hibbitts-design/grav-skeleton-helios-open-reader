@@ -1,5 +1,5 @@
 # v0.9.6
-## XX/XX/2026
+## 05/21/2026
 
 1. [](#bugfix)
     * Set default theme to Helios
