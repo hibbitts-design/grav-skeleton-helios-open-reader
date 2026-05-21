@@ -33,7 +33,7 @@ pages:
   type: regular
   dirs:
     - 'page://'
-  theme: quark
+  theme: helios
   order:
     by: default
     dir: asc
