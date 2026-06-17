@@ -1,8 +1,10 @@
 # v0.9.8
-## XX/XX/2026
+## 06/17/2026
 
 1. [](#improved)
     * Updated screenshot
+    * Update example pages (default multi-publication setup)
+    * Updated ReadMe
 
 # v0.9.7
 ## 06/15/2026
