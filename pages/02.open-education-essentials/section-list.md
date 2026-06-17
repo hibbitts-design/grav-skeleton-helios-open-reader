@@ -14,7 +14,7 @@ sitemap:
     lastmod: '29-04-2026 14:22'
 media_order: viktor-forgacs-click-LNwIJHUtED4-unsplash.jpg
 prev_next_position: both
-published: false
+published: true
 show_oer_attribution: false
 cover_image: kevin-grieve-B8ciJlFvaBQ-unsplash.jpg
 ---
