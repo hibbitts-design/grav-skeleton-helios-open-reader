@@ -27,7 +27,7 @@ languages:
   pages_fallback_only: false
   debug: false
 home:
-  alias: /publications
+  alias: /readers
   hide_in_urls: false
 pages:
   type: regular
@@ -173,6 +173,8 @@ images:
   debug: false
   auto_fix_orientation: true
   seofriendly: false
+  url_actions: false
+  max_pixels: 25000000
   cls:
     auto_sizes: false
     aspect_ratio: false
