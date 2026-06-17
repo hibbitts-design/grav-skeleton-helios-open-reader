@@ -1,3 +1,9 @@
+# v0.9.11
+## 06/17/2026
+
+1. [](#bugfix)
+    * Fix incorrect home alias
+
 # v0.9.10
 ## 06/17/2026
 
