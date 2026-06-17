@@ -16,6 +16,7 @@ media_order: viktor-forgacs-click-LNwIJHUtED4-unsplash.jpg
 section_label: Chapter
 prev_next_position: both
 show_oer_attribution: true
+cover_image: olga-tutunaru-JMATuFkXeHU-unsplash.jpg
 ---
 
 Welcome to the **Grav Helios Open Reader** – a guide to publishing open textbooks and readers on the web with the Helios Open Reader plugin and [Grav Premium Helios theme](https://getgrav.org/premium/helios).
