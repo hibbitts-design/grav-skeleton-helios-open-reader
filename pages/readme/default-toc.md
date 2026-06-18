@@ -157,8 +157,7 @@ Global settings for section label, Prev/Next position, and OER attribution are s
 | Field | Description |
 |-------|-------------|
 | `title` | Publications list title displayed in the header |
-| `subtitle` | Optional subtitle |
-| `cover_image` | Filename of a cover image |
+| `subtitle` | Optional collection tagline displayed below the title |
 | `prev_next_position` | Prev/Next position on section pages: `both` (default), `top`, or `bottom` |
 | `show_oer_attribution` | Show CC license footer on all pages |
 | `section_label` | Section label for all publications (e.g. `Chapter`). Overridable per publication. |
@@ -179,10 +178,11 @@ These fields apply when `section-list.md` is used as the publication home (recom
 | Field | Description |
 |-------|-------------|
 | `title` | Publication title |
-| `subtitle` | Optional subtitle shown below the title |
+| `subtitle` | Optional subtitle shown below the title; also used as the description on the publication card in the readers list |
 | `cover_image` | Cover image filename for this publication |
-| `authors` | Author name(s) |
-| `edition` | Optional edition label |
+| `authors` | Author name(s); also shown on the publication card in the readers list |
+| `edition` | Optional edition label; also shown on the publication card in the readers list |
+| `group` | Optional group label for organizing this publication under a heading on the readers list (e.g. `Textbooks`, `Guides`). Publications without a group appear first. |
 | `license` | CC license badge |
 | `start_button_text` | Start Reading button label. Leave empty to hide. |
 | `section_label` | Override the section label for this publication only |
