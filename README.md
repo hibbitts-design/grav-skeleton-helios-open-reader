@@ -89,10 +89,11 @@ Still unsure? Install the skeleton package on almost any Web server, add your [G
 
 ## Features
 
-Helios Open Reader provides a ready-built open textbook or reader site using portable Markdown files you fully control. Highlights include a configurable sections structure, a full set of callout blocks, Save My Place navigation, and optional Git Sync for open collaborative authoring.
+Helios Open Reader provides a ready-built open textbook or reader site using portable Markdown files you fully control. Highlights include a configurable sections structure, multi-publication support, a full set of callout blocks, Save My Place navigation, and optional Git Sync for open collaborative authoring.
 
 ### Reader Structure
 - **Sections structure** — top-level folders named `section-N` are auto-detected as sections and render as section cards on the reader home
+- **Multi-publication** — group multiple publications (books, guides, essays, reports) under a single readers home page; each publication has its own cover image, metadata, and section card grid; publication folders using `section-list.md` at root level are auto-detected; the sidebar shows links back to the readers list and the current publication home
 - **Optional parts grouping** — rename section folders to `part-N-section-M` (e.g. `part-1-section-1`, `part-2-section-1`) to group sections into parts; part headings appear automatically on the reader home, and Prev/Next navigation and reading progress are scoped per part
 - **Section N header** — section pages automatically display their section number in the page header; inherits correctly for all sub-pages within a section. The label is configurable (e.g. Chapter, Project, Unit, Module) via **Admin → Pages → Reader Home → Section Label**
 - **Section sub-pages** — sections can contain any number of sub-pages, all shown in the sidebar and navigable with Prev/Next controls
@@ -114,7 +115,7 @@ Helios Open Reader provides a ready-built open textbook or reader site using por
 - Five built-in GitHub-style callouts via the github-markdown-alerts plugin: `> [!NOTE]`, `> [!TIP]`, `> [!IMPORTANT]`, `> [!WARNING]`, `> [!CAUTION]`
 
 ### Navigation & Reading Experience
-- **Save My Place** — records the last section page visited in localStorage; a dismissable "Continue reading" strip appears on the reader home page on return
+- **Save My Place** — records the last section page visited in localStorage; the readers list shows a dismissable "Last read" strip linking to the publication home, and the publication home shows a "Continue reading" strip linking directly to the last section read
 - **Reading progress indicator** — shows current page position (e.g. Page 4 of 22) with an accessible progress bar above the Prev/Next navigation on section pages
 - **Prev/Next navigation** — configurable position: top, bottom, or both
 - **TOC scroll spy** — active heading highlighted in the Table of Contents as the reader scrolls
@@ -149,7 +150,7 @@ Append `?embedded=true` to any page URL to display only the page content — no 
 
 Helios Open Reader is best suited for authors and educators comfortable with web hosting and folder-based content structure. An online Admin panel is included for browser-based editing – no code editor required.
 
-The skeleton is a **complete package** – Grav CMS, the Helios Open Reader plugin, and demo content are all included; the [Grav Premium Helios theme](https://getgrav.org/premium/helios) requires a separate license. The home page is a reader landing page showing demo sections.
+The skeleton is a **complete package** – Grav CMS, the Helios Open Reader plugin, and demo content are all included; the [Grav Premium Helios theme](https://getgrav.org/premium/helios) requires a separate license. The home page is a readers list with two demo publications.
 
 ### Pre-flight Checklist
 1. Confirm your web server meets [Grav's requirements](https://learn.getgrav.org/17/basics/requirements) (PHP 8.0 or higher)
@@ -171,33 +172,123 @@ See [Reader Setup](#reader-setup) to rename folders and edit your pages.
 
 ## Reader Setup
 
-All reader content lives within `user/pages/`. The skeleton ships with a reader home page and three pre-configured demo sections.
+All reader content lives within `user/pages/`. A **publication** is a titled reader with its own home page, authors, sections, and optional parts.
+
+The skeleton ships pre-configured in multi-publication mode with two demo publications.
+
+### Default Setup (Multi-Publication)
 
 ```
 user/pages/
-├── 00.sections/              # Reader home page
-│   └── section-list.md           # Reader title, subtitle, authors, edition, license, cover image
-├── 01.section-1/           # Section 1 (published by default)
-│   ├── section-page.md     # Section settings (section_number, description, icon, learning_objectives)
-│   ├── 01.section-one/     # Sub-page (also uses section-page.md)
-│   └── 02.section-two/     # Sub-page (also uses section-page.md)
+├── 00.readers/              # Readers home
+│   └── reader-list.md
+├── 01.open-reader-guide/         # Publication 1 — Grav Helios Open Reader
+│   ├── section-list.md           # Publication home
+│   ├── 01.section-1/             # Section 1 (with sub-pages)
+│   └── ...
+├── 02.open-education-essentials/ # Publication 2 — Open Education Essentials
+│   ├── section-list.md
+│   └── ...
+└── readme/
+```
+
+The readers home auto-detects all publication folders at root level and displays them as cards. Section names in the sidebar are drawn from each section page's `title` field — no `versioning.labels` configuration is needed.
+
+To add a new publication, create a numbered folder at root level with a `section-list.md` — set at minimum a `title` — and your section folders inside.
+
+> [!TIP]
+> After adding, renaming, or removing a section folder, clear the Grav cache via the **Clear Cache** button in the Admin panel.
+
+To hide a publication from the list while keeping its URL accessible, set `visible: false` in the publication's `section-list.md` frontmatter.
+
+#### Readers List Settings (`reader-list.md`)
+
+Global settings for section label, Prev/Next position, and OER attribution are set here and apply to all publications; individual publications can override them in their own `section-list.md`.
+
+| Field | Description |
+|-------|-------------|
+| `title` | Publications list title displayed in the header |
+| `subtitle` | Optional collection tagline displayed below the title |
+| `prev_next_position` | Prev/Next position on section pages: `both` (default), `top`, or `bottom` |
+| `show_oer_attribution` | Show CC license footer on all pages |
+| `section_label` | Section label for all publications (e.g. `Chapter`). Overridable per publication. |
+| `license` | CC license label |
+| `license_url` | License URL |
+| `attribution_text` | Full attribution statement |
+| `cards_per_row` | Publication cards per row (1–3); default is 2 |
+| `card_icon` | Default icon for reader cards |
+| `card_image_layout` | Card image position: `side` or `top` (default: `top`) |
+| `card_description_lines` | Max description lines per card |
+
+Page content in `reader-list.md` appears above the reader cards by default. Use `===` as a delimiter to also show content below the cards.
+
+#### Publication Home Settings (`section-list.md`)
+
+These fields apply when `section-list.md` is used as the publication home (recommended). These fields are set in the publication's `section-list.md`.
+
+| Field | Description |
+|-------|-------------|
+| `title` | Publication title |
+| `subtitle` | Optional subtitle shown below the title; also used as the description on the publication card in the readers list |
+| `cover_image` | Cover image filename for this publication |
+| `authors` | Author name(s); also shown on the publication card in the readers list |
+| `edition` | Optional edition label; also shown on the publication card in the readers list |
+| `last_updated` | Optional date displayed on the publication card in the readers list. Set via the **Last Updated** field in the Admin panel. |
+| `group` | Optional group label for organizing this publication under a heading on the readers list (e.g. `Textbooks`, `Guides`). Publications without a group appear first. |
+| `license` | CC license badge |
+| `start_button_text` | Start Reading button label. Leave empty to hide. |
+| `section_label` | Override the section label for this publication only |
+| `prev_next_position` | Override Prev/Next position for this publication |
+| `show_oer_attribution` | Override OER attribution display for this publication |
+| `cards_per_row` | Section cards per row (1–3); default is 1 |
+| `card_icon` | Default icon for section cards |
+| `card_image_layout` | Card image position: `side` or `top` (default: `side`) |
+| `card_description_lines` | Max description lines per card |
+
+### Showing and Hiding Publications and Sections
+
+In the Admin panel, open the publication or section folder and set **Published** to **Yes** to show or **No** to hide it. Unpublished publications and sections are also excluded from search results and the sidebar.
+
+Once you have set up your own content, you can safely delete any unused demo publications or sections from `user/pages/` via the Admin panel or FTP.
+
+> [!TIP]
+> If changes don't appear immediately after publishing pages or updating settings, clear the Grav cache via the **Clear Cache** button in the Admin panel.
+
+### Adding a New Section
+
+To add a section inside a publication, copy an existing section folder (e.g. `01.open-reader-guide/01.section-1/`) into the same publication's folder via FTP or the Admin panel. Ensure the folder name follows the `section-N` convention, then set **Published** to **Yes** in the Admin panel to make it visible.
+
+> [!TIP]
+> After duplicating and renaming a section folder, clear the Grav cache via the **Clear Cache** button in the Admin panel if the new section does not appear immediately.
+
+### Single-Publication Alternative
+
+If you only need a single publication and prefer a simpler root-level folder structure, you can convert the skeleton to single-publication mode:
+
+1. Remove the `00.readers/` folder
+2. Move your publication folder's contents (`section-list.md` and section folders) to root level
+3. Update `home.alias` in `user/config/system.yaml` to point to your reader home (e.g. `/open-reader-guide`)
+
+```
+user/pages/
+├── 00.my-publication/    # Reader home page
+│   └── section-list.md
+├── 01.section-1/
 ├── 02.section-2/
 ├── 03.section-3/
 └── readme/
 ```
 
-Rename section folders to match your content, either in the Admin Panel or via FTP. The number prefix on each folder (e.g. `01.section-1/`) controls the order in the sidebar navigation.
-
 > [!TIP]
-> After adding, renaming, or removing a section folder, update `versioning.labels` in `user/config/themes/helios.yaml` (or via **Admin → Themes → Helios → Versioning → Version Labels**) to add the new folder name as a key — this sets the section name shown in the sidebar and browser tab title.
+> In single-publication mode, add a `versioning.labels` entry in `user/config/themes/helios.yaml` for each section folder — this sets the section name shown in the sidebar and browser tab title.
 
-### Grouping Sections into Parts
+#### Grouping Sections into Parts
 
-To group sections into parts on the reader home page, use the `part-N-section-M` folder naming pattern instead of `section-N`:
+Parts grouping applies in single-publication mode. To group sections into parts on the reader home page, use the `part-N-section-M` folder naming pattern instead of `section-N`:
 
 ```
 user/pages/
-├── 00.sections/
+├── 00.my-publication/
 ├── 01.part-1-section-1/    # Part 1, Section 1
 ├── 02.part-1-section-2/    # Part 1, Section 2
 ├── 03.part-2-section-1/    # Part 2, Section 1
@@ -220,29 +311,13 @@ parts:
     label: 'Applying Open Practices'
 ```
 
-### Showing and Hiding Sections
-
-In the Admin panel, open the section folder and set **Published** to **Yes** to show or **No** to hide it. Unpublished sections are also excluded from search results and the sidebar.
-
-Once you have set up your own content, you can safely delete any unused demo sections from `user/pages/` via the Admin panel or FTP.
-
-> [!TIP]
-> If changes don't appear immediately after publishing pages or updating settings, clear the Grav cache via the **Clear Cache** button in the Admin panel.
-
-### Adding a New Section
-
-To add a section, copy an existing section folder (e.g. `01.section-1/`) via FTP or the Admin panel (when using the Admin panel, open the section page, click the copy icon, then update the **Page Title** field to a valid new section ID such as `section-4`). Ensure the folder name follows the `section-N` convention, then add the new folder name as a key in `versioning.labels` in `user/config/themes/helios.yaml` (or via **Admin → Themes → Helios → Versioning → Version Labels**). Finally, set **Published** to **Yes** in the Admin panel to make it visible.
-
-> [!TIP]
-> After duplicating and renaming a section folder, clear the Grav cache via the **Clear Cache** button in the Admin panel if the new section does not appear immediately.
-
 ## Reader Home Settings
 
-The `section-list.md` frontmatter controls the reader identity and card layout on the home page. These fields can be set in the Admin Panel by opening the reader home page.
+The `section-list.md` frontmatter controls the publication identity and card layout. In single-publication mode it is the reader home; in multi-publication mode it is the publication home inside each publication folder. These fields can be set in the Admin Panel by opening the relevant page.
 
 | Field | Description |
 |-------|-------------|
-| `title` | Reader title displayed in the header |
+| `title` | Title displayed in the header |
 | `subtitle` | Optional subtitle shown below the title in italics |
 | `authors` | Author name(s) shown below the subtitle |
 | `edition` | Optional edition line (e.g. `First Edition, 2025`) |
@@ -256,9 +331,9 @@ The `section-list.md` frontmatter controls the reader identity and card layout o
 | `section_label` | Label used for sections throughout the reader (e.g. `Chapter`, `Unit`). Leave empty to use the language default (`Section`). |
 | `part_label` | Label used for part headings on the reader home page when using the `part-N-section-M` folder naming pattern (e.g. `Theme`, `Project`). Leave empty to use the default (`Part`). |
 | `parts` | Optional list of custom part titles — see [Grouping Sections into Parts](#grouping-sections-into-parts) |
-| `cards_per_row` | Number of section cards per row (1–3) |
+| `cards_per_row` | Number of section cards per row (1–3); default is 1 |
 | `card_icon` | Default icon for all cards (Tabler icon path) |
-| `card_image_layout` | Card image position: `side` or `top` |
+| `card_image_layout` | Card image position: `side` or `top` (default: `side`) |
 | `card_description_lines` | Maximum description lines per card (2, 3, or 0 for no limit) |
 
 Page content written in `section-list.md` appears above the cards by default. To also display content **below** the cards, add `===` on its own line as a delimiter:
@@ -306,7 +381,7 @@ learning_objectives: |
 
 ### Reader Title
 
-The reader title displayed in the browser tab and header comes from the `title` field in `section-list.md`. Edit it via **Admin → Pages → Reader Home**, or directly in `user/pages/00.sections/section-list.md`.
+The reader title displayed in the browser tab and header comes from the `title` field in `section-list.md`. Edit it via **Admin → Pages → Reader Home**, or directly in the `section-list.md` file in your reader home page folder.
 
 ### Section Names
 
@@ -373,6 +448,7 @@ The following settings are available in the Admin panel under **Plugins → Heli
 | Admin Font Size (Admin 1.7 only) | Large | Sets the Admin Panel font size: Default, Large, or Larger |
 | Show Site Logo Icon | Enabled | Show or hide the icon square next to the Logo Text in the header when no logo image is set |
 | Site Logo Icon | `tabler/notebook.svg` | Tabler icon path for the site logo icon square. Only applies when Show Site Logo Icon is enabled |
+| Single Publication Site Logo Link | `single_publication` (default) | When only one publication is listed, the site logo links directly to that publication's home page. Set to **Readers Home Page** to always link to the readers list instead. |
 | Show Plugin Credits | Enabled | Show or hide the "Built with Grav · Helios · Helios Open Reader" attribution line in the footer |
 | Show Repository Host Icon Link in Header | Enabled | Show a GitHub or Codeberg icon link to the reader repository in the site header (requires GitHub Integration enabled in the Helios theme) |
 | Git Link Icon | `tabler/file-text.svg` | Tabler icon path for the Git link icon shown in the page footer |
@@ -380,7 +456,7 @@ The following settings are available in the Admin panel under **Plugins → Heli
 | Repository Host | `github.com` | Repository hosting service for the Helios GitHub Integration (`github.com` or `codeberg.org`) |
 | H5P Content Embed Source URL | `https://h5p.org/h5p/embed/` | Base URL for H5P embeds via Content ID (used with `[h5p id="..."]`) |
 | Enable Plain Text Version | Disabled | Generate `/llms.txt` (structured index) and `/llms-full.txt` (full content) endpoints containing all reader content in plain text |
-| Show Plain Text Version Link in Footer | Enabled | Show a link to `/llms-full.txt` in the page footer. Only applies when Enable Plain Text Version is enabled |
+| Show Plain Text Version Link in Footer | Enabled | Show a plain text version link in the page footer. In multi-publication mode the link is scoped to the current publication; not shown on the readers list page. Only applies when Enable Plain Text Version is enabled |
 | Plain Text Version Link Label | `Plain text version` | Label for the plain text version footer link |
 | Plain Text Version Link Icon | `tabler/book.svg` | Tabler icon path shown before the plain text version link label. Leave empty for no icon |
 | Image URLs in Plain Text Version | `Absolute URLs` | Controls how images appear in the plain text version: **Absolute URLs** (recommended — makes images accessible to AI tools), **Suppress images** (text-only output), or **Relative paths** (not recommended for remote LLM use) |
@@ -388,7 +464,8 @@ The following settings are available in the Admin panel under **Plugins → Heli
 
 > **Note:** To apply the Helios-inspired Admin Panel 1.7 colour scheme (zinc nav, accessible blue links, muted purple accents), go to **Admin → Customization → Presets**, select **Helios**, and click **Save**.
 ### Templates
-- **section-list** – Reader home template displaying the reader header, resume reading strip, and section card grid
+- **reader-list** – Readers home template displaying a card grid of all publications (multi-publication mode)
+- **section-list** – Reader home for single-publication mode and publication home in multi-publication mode; displays the reader header, resume reading strip, and section card grid
 - **section-page** – Section reading page with configurable section N header, optional Learning Objectives block from frontmatter, and main content
 - **default-toc** – Content page with a right-column Table of Contents; set `template: default-toc` in any page's frontmatter to enable (requires the page-toc plugin, included)
 
