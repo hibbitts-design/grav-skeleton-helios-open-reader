@@ -1,5 +1,5 @@
 # v0.9.12
-## XX/XX/2026
+## 06/18/2026
 
 1. [](#improved)
     * Update example pages
