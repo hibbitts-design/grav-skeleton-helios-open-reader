@@ -1,22 +1,9 @@
-# v0.9.14
+# v0.9.12
 ## 06/19/2026
 
 1. [](#improved)
     * Update example pages
     * Updated with latest Helios Open Reader plugin
-
-# v0.9.13
-## 06/18/2026
-
-1. [](#improved)
-    * Update example pages
-    * Updated with latest Helios Open Reader plugin
-
-# v0.9.12
-## 06/18/2026
-
-1. [](#improved)
-    * Update example pages
 
 # v0.9.11
 ## 06/17/2026
