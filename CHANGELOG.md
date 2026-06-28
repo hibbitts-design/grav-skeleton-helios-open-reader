@@ -1,3 +1,10 @@
+# v0.9.16
+## 06/28/2026
+
+1. [](#improved)
+    * Updated ReadMe
+    * Updated with latest Helios Open Reader plugin
+
 # v0.9.15
 ## 06/27/2026
 
