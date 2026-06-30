@@ -1,3 +1,12 @@
+# v0.9.17
+## 06/30/2026
+
+1. [](#improved)
+    * Updated with latest Helios Open Reader plugin
+
+1. [](#bugfix)
+    * Updated Content Width for Helios theme config to minimum allowed 800
+
 # v0.9.16
 ## 06/28/2026
 
