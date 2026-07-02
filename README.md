@@ -66,7 +66,7 @@ A complete, pre-configured package for publishing open textbooks, course readers
 - **An Admin Panel that keeps getting better** — Helios-inspired refresh today, with a ground-up redesign coming as part of Grav's next major release.
 - **A CMS and Git, not a choice between them** — most platforms give you one or the other: a browser editor that locks content in a database, or a Git workflow that requires technical setup. Helios Open Reader gives you both: browser-based editing and automatic Git Sync with GitHub or Codeberg.
 - **Plain text export for open access** — optionally publish all reader content as structured plain text, portable and format-neutral, ready for search indexing, ebook pipelines, and any tool that can read a URL.
-- **Bring your Pressbooks content with you** — the companion [Pressbooks Converter](https://github.com/hibbittsdesign/pressbooks-converter) transforms a Pressbooks XHTML export into a complete Open Reader in minutes: sections, chapters, learning objectives, cover image, license, and OER attribution all carried across automatically.
+- **Bring your Pressbooks content with you** — the companion [Pressbooks Converter](https://pressbooks-converter.hibbittsdesign.org/) transforms a Pressbooks XHTML export into a complete Open Reader in minutes: sections, chapters, learning objectives, cover image, license, and OER attribution all carried across automatically.
 
 ## When is Grav Helios Open Reader a Good Candidate?
 
