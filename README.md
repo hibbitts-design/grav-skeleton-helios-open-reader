@@ -59,7 +59,7 @@ A complete, pre-configured package for publishing open textbooks, course readers
 ## What Sets It Apart
 
 - **Built for open education from the ground up** — CC license display, OER attribution footer, callout blocks (Learning Objectives, Key Takeaways, Examples, Exercises), and a section structure designed for open textbooks, course readers, and OER.
-- **Readers never lose their place** — Save My Place records the last page visited and surfaces a "Continue reading" strip on return. Most open textbook and reader platforms don't offer this at all.
+- **Readers never lose their place** — Keep My Place records the last page visited and surfaces a "Continue reading" strip on return. Most open textbook and reader platforms don't offer this at all.
 - **Content you own and can take anywhere** — everything lives as portable Markdown files on your server, fully independent of any platform or service. Switch tools, migrate hosts, or open a pull request — your content travels with you, not with the platform.
 - **Embeds cleanly into any LMS** — one URL parameter displays content only, without surrounding navigation; internal links carry it forward automatically. No LTI configuration or institutional integration required.
 - **No build pipeline, ever** — edit in the browser-based Admin panel and changes go live immediately. Unlike static site generators for open textbooks, there's nothing to install locally and no commit → push → build → deploy cycle.
@@ -90,7 +90,7 @@ Still unsure? Install the skeleton package on almost any Web server, add your [G
 
 ## Features
 
-Helios Open Reader provides a ready-built open textbook or reader site using portable Markdown files you fully control. Highlights include a configurable sections structure, multi-publication support, a full set of callout blocks, Save My Place navigation, and optional Git Sync for open collaborative authoring.
+Helios Open Reader provides a ready-built open textbook or reader site using portable Markdown files you fully control. Highlights include a configurable sections structure, multi-publication support, a full set of callout blocks, Keep My Place navigation, and optional Git Sync for open collaborative authoring.
 
 ### Reader Structure
 - **Sections structure** — top-level folders named `section-N` are auto-detected as sections and render as section cards on the reader home
@@ -116,7 +116,7 @@ Helios Open Reader provides a ready-built open textbook or reader site using por
 - Five built-in GitHub-style callouts via the github-markdown-alerts plugin: `> [!NOTE]`, `> [!TIP]`, `> [!IMPORTANT]`, `> [!WARNING]`, `> [!CAUTION]`
 
 ### Navigation & Reading Experience
-- **Save My Place** — records the last section page visited in localStorage; the readers list shows a dismissable "Last read" strip linking to the publication home, and the publication home shows a "Continue reading" strip linking directly to the last section read
+- **Keep My Place** — records the last section page visited in localStorage; the readers list shows a dismissable "Last read" strip linking to the publication home, and the publication home shows a "Continue reading" strip linking directly to the last section read
 - **Reading progress indicator** — shows current page position (e.g. Page 4 of 22) with an accessible progress bar above the Prev/Next navigation on section pages
 - **Prev/Next navigation** — configurable position: top, bottom, or both
 - **TOC scroll spy** — active heading highlighted in the Table of Contents as the reader scrolls
@@ -476,7 +476,7 @@ The following settings are available in the Admin panel under **Plugins → Heli
 ### Assets
 - **helios.css** – Theme styling (announcement blockquotes, heading typography, Font Awesome spacing, responsive containers)
 - **reader.css** – Reader-specific styles (callout blocks spacing, resume reading strip, reading progress indicator, top Prev/Next navigation styling)
-- **helios.js** – Embedly dark/light theme support, Save My Place localStorage logic, HTMX content-loaded integration
+- **helios.js** – Embedly dark/light theme support, Keep My Place localStorage logic, HTMX content-loaded integration
 - **print.css** – Print stylesheet (hides navigation chrome, resets colors for light and dark themes, controls page breaks, displays absolute link URLs, sets consistent page margins)
 - **admin.css** – Helios-inspired Admin Panel styling (conditionally loaded based on the Helios-inspired Admin Styling setting)
 - **admin.js** – Admin panel JavaScript customizations
