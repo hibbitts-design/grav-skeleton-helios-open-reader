@@ -3,6 +3,7 @@
 
 1. [](#improved)
     * Update example pages
+    * Updated Content Width for Helios theme config to 900
 
 # v0.9.18
 ## 07/03/2026
