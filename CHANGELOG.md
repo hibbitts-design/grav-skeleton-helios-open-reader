@@ -1,8 +1,9 @@
 # v0.9.18
-## XX/XX/2026
+## 07/03/2026
 
 1. [](#improved)
     * Updated ReadMe
+    * Updated with latest Helios Open Reader plugin
 
 # v0.9.17
 ## 06/30/2026
