@@ -1,9 +1,10 @@
 # v0.9.19
-## XX/XX/2026
+## 07/05/2026
 
 1. [](#improved)
     * Update example pages
     * Updated Content Width for Helios theme config to 900
+    * Updated with latest Helios Open Reader plugin
 
 # v0.9.18
 ## 07/03/2026
