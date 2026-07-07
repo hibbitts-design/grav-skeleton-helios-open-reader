@@ -2,6 +2,8 @@
 ## 07/12/2026
 
 1. [](#improved)
+    * Updated ReadMe
+    * Update example pages
     * Updated with latest Helios Open Reader plugin
 
 # v0.9.19
