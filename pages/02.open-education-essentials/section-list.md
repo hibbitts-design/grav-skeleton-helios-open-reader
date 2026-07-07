@@ -1,6 +1,6 @@
 ---
 title: 'Open Education Essentials'
-nested_section_nav: true
+nested_section_nav: '1'
 subtitle: 'A Practical Guide for Educators'
 authors: 'Your Name'
 edition: 'First Edition, 2026'

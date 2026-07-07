@@ -94,7 +94,7 @@ Helios Open Reader provides a ready-built open textbook or reader site using por
 
 ### Reader Structure
 - **Sections structure** — top-level folders named `section-N` are auto-detected as sections and render as section cards on the reader home
-- **Multi-publication** — group multiple publications (books, guides, essays, reports) under a single readers home page; each publication has its own cover image, metadata, and section card grid; publication folders using `section-list.md` at root level are auto-detected; the sidebar shows links back to the readers list and the current publication home
+- **Multi-publication** — group multiple publications (books, guides, essays, reports) under a single readers home page; each publication has its own cover image, metadata, and section card grid; publication folders using `section-list.md` at root level are auto-detected; the sidebar shows links back to the readers list and the current publication home; by default chapters list directly in the sidebar — add `nested_section_nav: true` to a publication's `section-list.md` to show a collapsible section home parent instead
 - **Optional parts grouping** — rename section folders to `part-N-section-M` (e.g. `part-1-section-1`, `part-2-section-1`) to group sections into parts; part headings appear automatically on the reader home, and Prev/Next navigation and reading progress are scoped per part
 - **Section N header** — section pages automatically display their section number in the page header; inherits correctly for all sub-pages within a section. The label is configurable (e.g. Chapter, Project, Unit, Module) via **Admin → Pages → Reader Home → Section Label**
 - **Section sub-pages** — sections can contain any number of sub-pages, all shown in the sidebar and navigable with Prev/Next controls
@@ -349,7 +349,7 @@ This text appears below the section cards.
 
 ## Section Page Settings
 
-The `section-page.md` frontmatter controls each section's landing page and card appearance.
+The `section.md` frontmatter controls each section's landing page and card appearance.
 
 | Field | Description |
 |-------|-------------|
@@ -467,7 +467,8 @@ The following settings are available in the Admin panel under **Plugins → Heli
 ### Templates
 - **reader-list** – Readers home template displaying a card grid of all publications (multi-publication mode)
 - **section-list** – Reader home for single-publication mode and publication home in multi-publication mode; displays the reader header, resume reading strip, and section card grid
-- **section-page** – Section reading page with configurable section N header, optional Learning Objectives block from frontmatter, and main content
+- **section** – Section landing page with optional section number, Learning Objectives block, and card metadata (description, icon, image, badge); one per section folder
+- **section-page** – Individual section content page; no custom frontmatter — add content directly in the editor
 - **default-toc** – Content page with a right-column Table of Contents; set `template: default-toc` in any page's frontmatter to enable (requires the page-toc plugin, included)
 
 > [!TIP]
@@ -503,6 +504,11 @@ All callouts accept an optional `title="..."` parameter and support Markdown con
 
 > [!TIP]
 > For simple notices, the standard Markdown callout `> [!IMPORTANT]` is a zero-friction alternative to the `[announcement]` shortcode.
+
+#### Blockquotes and Excerpts
+
+- Standard Markdown blockquote (`> text`) – short pull quotes with the default bold accent border
+- `[excerpt]...[/excerpt]` – for longer multi-paragraph passages; renders with a subtler grey left border and italic text, closer to how long quotations appear in print
 
 #### Embedding
 
