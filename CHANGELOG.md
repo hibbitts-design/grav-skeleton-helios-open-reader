@@ -1,3 +1,9 @@
+# v1.0.0
+## 07/12/2026
+
+1. [](#improved)
+    * Updated with latest Helios Open Reader plugin
+
 # v0.9.19
 ## 07/05/2026
 
