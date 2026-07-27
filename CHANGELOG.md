@@ -1,3 +1,9 @@
+# v1.1.1
+## 07/27/2026
+
+1. [](#bugfix)
+    * Fix malformed ChangeLog entry
+
 # v1.1.0
 ## 07/27/2026
 
