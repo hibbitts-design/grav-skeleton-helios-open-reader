@@ -429,6 +429,7 @@ All callouts accept an optional `title="..."` parameter and support Markdown con
 - [raw]`[h5p url="..."]`[/raw] – H5P interactive content via full embed URL
 - [raw]`[h5p id="..."]`[/raw] – H5P interactive content via Content ID (requires H5P Content Embed Source URL to be set in plugin settings)
 - [raw]`[embedly url="..."]`[/raw] – Embedly card with dark mode support
+- [raw]`[linkpreviewcard url="..."]`[/raw] – Self-hosted link preview card (image, title, description) scraped directly from the page; an alternative to [raw]`[embedly]`[/raw] that doesn't rely on the [embed.ly](https://embed.ly/) service
 
 > [!TIP]
 > For simple notices, the standard Markdown callout `> [!IMPORTANT]` is a zero-friction alternative to the [raw]`[announcement]`[/raw] shortcode.
