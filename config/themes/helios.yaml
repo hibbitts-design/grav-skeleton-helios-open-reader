@@ -60,12 +60,6 @@ versioning:
   redirect_unversioned: false
   show_badge: false
   show_dropdown: false
-  labels:
-    section-1: Introduction
-    section-2: Installation
-    section-3: 'Creating Content'
-    section-4: 'Publishing & Sharing'
-    section-5: Customization
 search:
   enabled: true
   provider: simplesearch
