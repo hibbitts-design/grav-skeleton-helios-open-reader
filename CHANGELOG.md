@@ -1,3 +1,9 @@
+# v1.1.4
+## XX/XX/2026
+
+1. [](#improved)
+    * Remove unneeded default versioning labels.
+
 # v1.1.3
 ## 08/04/2026
 
