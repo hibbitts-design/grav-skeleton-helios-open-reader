@@ -1,8 +1,9 @@
 # v1.1.4
-## XX/XX/2026
+## 08/24/2026
 
 1. [](#improved)
     * Remove unneeded default versioning labels
+    * Updated to Grav 2.0.21
 
 # v1.1.3
 ## 08/04/2026
