@@ -18,7 +18,7 @@ prev_next_position: both
 show_oer_attribution: false
 cover_image: kevin-grieve-B8ciJlFvaBQ-unsplash.jpg
 last_updated: '18-06-2026 16:13'
-published: false
+published: true
 cover_image_layout: default
 show_section_label: '1'
 show_sticky_nav: '1'
