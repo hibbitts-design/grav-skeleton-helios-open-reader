@@ -1,3 +1,11 @@
+# v1.1.5
+## 09/13/2026
+
+1. [](#improved)
+    * Update example pages
+    * Updated ReadMes
+    * Updated to Grav 2.1
+
 # v1.1.4
 ## 08/24/2026
 
