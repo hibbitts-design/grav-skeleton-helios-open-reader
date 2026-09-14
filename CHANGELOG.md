@@ -1,3 +1,10 @@
+# v1.1.6
+## 09/14/2026
+
+1. [](#improved)
+    * Update example pages
+    * Updated ReadMe
+
 # v1.1.5
 ## 09/13/2026
 
