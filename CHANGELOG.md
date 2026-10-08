@@ -1,9 +1,9 @@
 # v1.1.7
-## XX/XX/2026
+## 10/08/2026
 
 1. [](#improved)
     * Update dependencies
-    * Update README with the Keep My Place setting and moving guides from Grav Open Publishing Space
+    * Update README with the Keep My Place and Show Reading Progress settings, the Hidden Prev/Next option, and moving guides from Grav Open Publishing Space
 
 # v1.1.6
 ## 09/14/2026
