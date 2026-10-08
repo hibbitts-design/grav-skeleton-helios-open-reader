@@ -240,6 +240,7 @@ These fields apply when `section-list.md` is used as the publication home (recom
 | `start_button_text` | Start Reading button label. Leave empty to hide. |
 | `section_label` | Override the section label for this publication only |
 | `prev_next_position` | Override Prev/Next position for this publication |
+| `keep_my_place` | Remember the last page each reader visited (in their own browser) and show a "Continue reading" bar on the publication home (`true` by default) |
 | `show_oer_attribution` | Override OER attribution display for this publication |
 | `cards_per_row` | Section cards per row (1–3); default is 1 |
 | `card_icon` | Default icon for section cards |
@@ -328,6 +329,7 @@ The `section-list.md` frontmatter controls the publication identity and card lay
 | `cover_image` | Filename of a cover image uploaded to the reader home media folder |
 | `start_button_text` | Label for the button linking to the first section (e.g. `Start Reading`, `Browse Projects`, `View Guides`). Leave empty to hide. |
 | `prev_next_position` | Where to display Prev/Next navigation on section pages: `both` (default), `top`, or `bottom` |
+| `keep_my_place` | Remember the last page each reader visited (in their own browser) and show a "Continue reading" bar on the reader home (`true` by default) |
 | `show_oer_attribution` | Display the CC license and attribution text in the footer of every page (`true` or `false`) |
 | `section_label` | Label used for sections throughout the reader (e.g. `Chapter`, `Unit`). Leave empty to use the language default (`Section`). |
 | `part_label` | Label used for part headings on the reader home page when using the `part-N-section-M` folder naming pattern (e.g. `Theme`, `Project`). Leave empty to use the default (`Part`). |
@@ -425,6 +427,17 @@ The browser tab title is automatically formatted as:
 `Page Title | Reader Title | Site Title`
 
 The Reader Title is drawn from the reader home page title. The Site Title comes from `site.title` in `user/config/site.yaml`. Set the Site Title to your institution or author name — it serves as the top-level identifier in the browser tab.
+
+## Moving from Grav Open Publishing Space
+
+Guides from [Grav Open Publishing Space](https://github.com/hibbitts-design/grav-skeleton-open-publishing-space) use the same core page types and settings as Open Reader – `section-list.md`, `section.md` and `section-page.md` – so a guide's folder can be copied into Open Reader's `pages` folder as a publication. Cover images, subtitle, authors, edition, license, attribution, section labels, cards per row, the Start button, Prev/Next position, Keep My Place and badges carry across unchanged.
+
+A few Open Publishing Space settings aren't used by Open Reader and are simply ignored:
+
+- `show_search_box` – Open Reader has site-wide search (⌘K) instead
+- `show_reading_progress` and `hide_next_prev_page_buttons` – Open Reader has its own reading progress and Prev/Next settings
+- `hide_page_title`
+- `part` – group sections into parts with `part-N-section-M` folder names or a `parts` list instead (see [Grouping Sections into Parts](#grouping-sections-into-parts))
 
 ## Git Sync & Open Editing
 
