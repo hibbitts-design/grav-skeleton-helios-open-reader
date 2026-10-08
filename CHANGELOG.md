@@ -3,6 +3,7 @@
 
 1. [](#improved)
     * Update dependencies
+    * Update README with the Keep My Place setting and moving guides from Grav Open Publishing Space
 
 # v1.1.6
 ## 09/14/2026
