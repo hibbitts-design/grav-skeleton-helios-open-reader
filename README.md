@@ -117,7 +117,7 @@ Helios Open Reader provides a ready-built open textbook or reader site using por
 - Five built-in GitHub-style callouts via the github-markdown-alerts plugin: `> [!NOTE]`, `> [!TIP]`, `> [!IMPORTANT]`, `> [!WARNING]`, `> [!CAUTION]`
 
 ### Navigation & Reading Experience
-- **Keep My Place** — records the last section page visited in localStorage; the readers list shows a dismissable "Last read" strip linking to the publication home, and the publication home shows a "Continue reading" strip linking directly to the last section read
+- **Keep My Place** – records the last section page visited in localStorage; a dismissable "Continue reading" strip appears on the publication home page on return, linking directly to the last section read
 - **Reading progress indicator** — shows current page position (e.g. Page 4 of 22) with an accessible progress bar above the Prev/Next navigation on section pages
 - **Prev/Next navigation** — configurable position: top, bottom, or both
 - **TOC scroll spy** — active heading highlighted in the Table of Contents as the reader scrolls
@@ -142,7 +142,7 @@ Append `?embedded=true` to any page URL to display only the page content — no 
 
 ### Authoring & Customization
 - Git Sync plugin included for syncing reader content with GitHub, Codeberg, or similar Git hosting
-- Automatic "Edit this Page" link via the Helios theme, defaulting to **View Page Markdown** for open access to reader content; optionally configurable to direct editing for contributors with repository access
+- Automatic "Edit this page" link via the Helios theme, opening the page's Markdown source file in your repository for open access to reader content; Git Link Mode can switch it to direct editing for contributors with repository access
 - OER attribution block — display a CC license statement in the footer, drawn from reader home page frontmatter
 - Full text link (off by default) – an optional link on each publication's home page to `/llms-full.txt`, Grav 2.1's full-content Markdown export, for open access to all reader content in a portable, format-neutral form; useful for ebook generation (e.g. Pandoc), search and indexing tools, and AI-compatible tools
 - Customize CSS and JavaScript via the bundled plugin assets
@@ -446,7 +446,7 @@ A few Open Publishing Space settings aren't used by Open Reader and are simply i
 The skeleton includes the [Git Sync plugin](https://github.com/trilbymedia/grav-plugin-git-sync), which keeps your site content automatically in sync with a GitHub or Codeberg repository. This enables a full open-authoring workflow:
 
 - Content editors can work directly in the Grav Admin or commit changes via Git
-- The Helios Theme's **"Edit this Page"** option defaults to a 'View Page Markdown' link on each page, taking readers directly to the Markdown source file in your repository (configurable to link directly to file editing via the Helios Open Reader plugin settings). For a page's Markdown without a Git setup, use the This page as Markdown link
+- The Helios theme's **Edit this page** link on each page takes readers directly to the page's Markdown source file in your repository (it opens the file for viewing by default; set Git Link Mode in the Helios Open Reader plugin settings to link straight to editing). For a page's Markdown without a Git setup, use the This page as Markdown link
 
 If you prefer not to write Markdown directly, the optional [Grav Premium Editor Pro](https://getgrav.org/premium/editor-pro) provides a visual block editor for editing pages.
 
