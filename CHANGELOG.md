@@ -1,3 +1,13 @@
+# v1.1.8
+## 10/09/2026
+
+1. [](#new)
+    * The "This page as Markdown (.md)" link is on by default, in the footer of reading pages
+1. [](#improved)
+    * Include the Copy as Markdown Button plugin, turned off (turn it on in Plugins for a copy button on pages)
+    * Update dependencies
+    * Update README
+
 # v1.1.7
 ## 10/08/2026
 
