@@ -66,7 +66,7 @@ A complete, pre-configured package for publishing open textbooks, course readers
 - **An Admin Panel that keeps getting better** — Helios-inspired refresh today, with a ground-up redesign coming as part of Grav's next major release.
 - **A CMS and Git, not a choice between them** — most platforms give you one or the other: a browser editor that locks content in a database, or a Git workflow that requires technical setup. Helios Open Reader gives you both: browser-based editing and automatic Git Sync with GitHub or Codeberg.
 - **This page as Markdown, for reuse** – a link in the footer of reading pages to just that page's Markdown, ready to adapt and reuse, with no Git setup needed (on by default; turn it off in the Helios Open Reader plugin settings). The Copy as Markdown Button plugin is also included, turned off, for anyone who'd like a one-click copy button on pages (turn it on in **Plugins**).
-- **Plain text export for open access** — optionally publish all reader content as structured plain text, portable and format-neutral, ready for search indexing, ebook pipelines, and any tool that can read a URL.
+- **Full text for open access** – an optional link on each publication's home page to its full text (`llms-full.txt`), portable and format-neutral, ready for search indexing, ebook pipelines, and any tool that can read a URL.
 - **Bring your Pressbooks content with you** – the companion [Pressbooks Converter](https://pressbooks-converter.hibbittsdesign.org/) (Beta) transforms a Pressbooks XHTML export into a complete Open Reader in minutes: sections, chapters, learning objectives, cover image, license, and OER attribution all carried across automatically.
 
 ## When is Grav Helios Open Reader a Good Candidate?
@@ -144,7 +144,7 @@ Append `?embedded=true` to any page URL to display only the page content — no 
 - Git Sync plugin included for syncing reader content with GitHub, Codeberg, or similar Git hosting
 - Automatic "Edit this Page" link via the Helios theme, defaulting to **View Page Markdown** for open access to reader content; optionally configurable to direct editing for contributors with repository access
 - OER attribution block — display a CC license statement in the footer, drawn from reader home page frontmatter
-- Plain text version (disabled by default) — optionally generate `/llms.txt` (structured index) and `/llms-full.txt` (full content) endpoints for open access to all reader content in a portable, format-neutral form; useful for ebook generation (e.g. Pandoc), search and indexing tools, and AI-compatible tools; a "Plain text version" footer link is included
+- Full text link (off by default) – an optional link on each publication's home page to `/llms-full.txt`, Grav 2.1's full-content Markdown export, for open access to all reader content in a portable, format-neutral form; useful for ebook generation (e.g. Pandoc), search and indexing tools, and AI-compatible tools
 - Customize CSS and JavaScript via the bundled plugin assets
 - Print stylesheet with page break control, absolute link URLs displayed inline, and consistent page margins across browsers
 
@@ -471,12 +471,13 @@ The following settings are available in the Admin panel under **Plugins → Heli
 | Git Link Mode | View file | Whether the Git link opens the file for **viewing** (default, for open access) or **editing** (for contributors with repository access) |
 | Repository Host | `github.com` | Repository hosting service for the Helios GitHub Integration (`github.com` or `codeberg.org`) |
 | H5P Content Embed Source URL | `https://h5p.org/h5p/embed/` | Base URL for H5P embeds via Content ID (used with `[h5p id="..."]`) |
-| Enable Plain Text Version | Disabled | Generate `/llms.txt` (structured index) and `/llms-full.txt` (full content) endpoints containing all reader content in plain text |
-| Show Plain Text Version Link in Footer | Enabled | Show a plain text version link in the page footer. In multi-publication mode the link is scoped to the current publication; not shown on the readers list page. Only applies when Enable Plain Text Version is enabled |
-| Plain Text Version Link Label | `Plain text version` | Label for the plain text version footer link |
+| Show This Page as Markdown Link in Footer | Enabled | Show a link to just the current page's Markdown (`<page>.md`) in the page footer. Requires Grav 2.1+ with its Serve Pages as Markdown setting on; not shown on the readers list or reader home pages, or on embedded pages |
+| This Page as Markdown Link Label | `This page as Markdown (.md)` | Label for the "This page as Markdown" footer link |
+| This Page as Markdown Link Icon | `tabler/markdown.svg` | Tabler icon path shown before the "This page as Markdown" link label. Leave empty for no icon |
+| Serve Per-Publication llms-full.txt | Disabled | On multi-publication sites, answers each reader's own `/<publication>/llms-full.txt` with that reader's full Markdown (requires Grav 2.1+ with Markdown Output enabled). Has no effect on single-publication sites, which use the Sitemap plugin's site-wide file instead |
+| Show Plain Text Version Link in Footer | Disabled | Show a plain text version link in the page footer, pointing at `/llms-full.txt`. On multi-publication sites, requires Serve Per-Publication llms-full.txt above; on single-publication sites, uses the Sitemap plugin's site-wide file when its "Serve llms-full.txt" setting is enabled; shown on each publication's home page (its Section List page) |
+| Plain Text Version Link Label | `Full text (llms-full.txt)` | Label for the plain text version footer link (the whole publication) |
 | Plain Text Version Link Icon | `tabler/book.svg` | Tabler icon path shown before the plain text version link label. Leave empty for no icon |
-| Image URLs in Plain Text Version | `Absolute URLs` | Controls how images appear in the plain text version: **Absolute URLs** (recommended — makes images accessible to AI tools), **Suppress images** (text-only output), or **Relative paths** (not recommended for remote LLM use) |
-| Include Page Templates | `section-page` | Only pages using these templates appear in the plain text version |
 
 > **Note:** To apply the Helios-inspired Admin Panel 1.7 colour scheme (zinc nav, accessible blue links, muted purple accents), go to **Admin → Customization → Presets**, select **Helios**, and click **Save**.
 ### Templates
