@@ -65,6 +65,7 @@ A complete, pre-configured package for publishing open textbooks, course readers
 - **No build pipeline, ever** — edit in the browser-based Admin panel and changes go live immediately. Unlike static site generators for open textbooks, there's nothing to install locally and no commit → push → build → deploy cycle.
 - **An Admin Panel that keeps getting better** — Helios-inspired refresh today, with a ground-up redesign coming as part of Grav's next major release.
 - **A CMS and Git, not a choice between them** — most platforms give you one or the other: a browser editor that locks content in a database, or a Git workflow that requires technical setup. Helios Open Reader gives you both: browser-based editing and automatic Git Sync with GitHub or Codeberg.
+- **This page as Markdown, for reuse** – a link in the footer of reading pages to just that page's Markdown, ready to adapt and reuse, with no Git setup needed (on by default; turn it off in the Helios Open Reader plugin settings). The Copy as Markdown Button plugin is also included, turned off, for anyone who'd like a one-click copy button on pages (turn it on in **Plugins**).
 - **Plain text export for open access** — optionally publish all reader content as structured plain text, portable and format-neutral, ready for search indexing, ebook pipelines, and any tool that can read a URL.
 - **Bring your Pressbooks content with you** – the companion [Pressbooks Converter](https://pressbooks-converter.hibbittsdesign.org/) (Beta) transforms a Pressbooks XHTML export into a complete Open Reader in minutes: sections, chapters, learning objectives, cover image, license, and OER attribution all carried across automatically.
 
@@ -445,7 +446,7 @@ A few Open Publishing Space settings aren't used by Open Reader and are simply i
 The skeleton includes the [Git Sync plugin](https://github.com/trilbymedia/grav-plugin-git-sync), which keeps your site content automatically in sync with a GitHub or Codeberg repository. This enables a full open-authoring workflow:
 
 - Content editors can work directly in the Grav Admin or commit changes via Git
-- The Helios Theme's **"Edit this Page"** option defaults to a 'View Page Markdown' link on each page, taking readers directly to the Markdown source file in your repository (configurable to link directly to file editing via the Helios Open Reader plugin settings)
+- The Helios Theme's **"Edit this Page"** option defaults to a 'View Page Markdown' link on each page, taking readers directly to the Markdown source file in your repository (configurable to link directly to file editing via the Helios Open Reader plugin settings). For a page's Markdown without a Git setup, use the This page as Markdown link
 
 If you prefer not to write Markdown directly, the optional [Grav Premium Editor Pro](https://getgrav.org/premium/editor-pro) provides a visual block editor for editing pages.
 
