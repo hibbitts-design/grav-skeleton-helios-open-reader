@@ -1,3 +1,10 @@
+# v1.2.1
+## 10/09/2026
+
+1. [](#improved)
+    * Update to Helios Open Reader plugin 1.2.1: the "Full text (llms-full.txt)" link shows on each publication's home page, and the license isn't repeated in the attribution
+    * Update README with the current Full text link settings
+
 # v1.2.0
 ## 10/09/2026
 
