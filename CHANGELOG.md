@@ -1,3 +1,12 @@
+# v1.2.2
+## XX/XX/2026
+
+1. [](#improved)
+    * Update to Helios Open Reader plugin 1.2.2
+    * Describe the "Edit this page" link as it works, in the README, ReadMe page and Git Sync page
+    * Bring the ReadMe page up to date with the README, including the "This page as Markdown" and "Full text" links
+    * Correct the README's Keep My Place description
+
 # v1.2.1
 ## 10/09/2026
 
