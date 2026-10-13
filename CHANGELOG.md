@@ -1,3 +1,9 @@
+# v1.2.3
+## XX/XX/2026
+
+1. [](#improved)
+    * README and Read Me page: "Moving from Grav Open Publishing Space" now says that only the guide moves across, not a blog or other pages
+
 # v1.2.2
 ## 10/13/2026
 
