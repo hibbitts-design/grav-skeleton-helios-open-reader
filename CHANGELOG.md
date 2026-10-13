@@ -1,5 +1,5 @@
 # v1.2.2
-## XX/XX/2026
+## 10/13/2026
 
 1. [](#improved)
     * Update to Helios Open Reader plugin 1.2.2
