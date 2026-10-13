@@ -381,7 +381,7 @@ The Reader Title is drawn from the reader home page title. The Site Title comes 
 
 ## Moving from Grav Open Publishing Space
 
-Guides from [Grav Open Publishing Space](https://github.com/hibbitts-design/grav-skeleton-open-publishing-space) use the same core page types and settings as Open Reader – `section-list.md`, `section.md` and `section-page.md` – so a guide's folder can be copied into Open Reader's `pages` folder as a publication. Cover images, subtitle, authors, edition, license, attribution, section labels, cards per row, the Start button, Prev/Next position, Keep My Place, Show Reading Progress, hidden Prev/Next buttons (`hide_next_prev_page_buttons`) and badges carry across unchanged.
+Guides from [Grav Open Publishing Space](https://github.com/hibbitts-design/grav-skeleton-open-publishing-space) use the same core page types and settings as Open Reader – `section-list.md`, `section.md` and `section-page.md` – so a guide's folder can be copied into Open Reader's `pages` folder as a publication. Only the guide moves across: Open Reader is a dedicated reading site, so a blog and other pages stay behind or need another home. Cover images, subtitle, authors, edition, license, attribution, section labels, cards per row, the Start button, Prev/Next position, Keep My Place, Show Reading Progress, hidden Prev/Next buttons (`hide_next_prev_page_buttons`) and badges carry across unchanged.
 
 A few Open Publishing Space settings aren't used by Open Reader and are simply ignored:
 
