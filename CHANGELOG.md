@@ -1,5 +1,5 @@
 # v1.2.3
-## XX/XX/2026
+## 10/15/2026
 
 1. [](#improved)
     * Update to Helios Open Reader plugin 1.2.4: printed section pages no longer start with a blank page, and embedded pages stay embedded when a section without text of its own opens its first page
