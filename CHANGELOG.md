@@ -2,6 +2,7 @@
 ## XX/XX/2026
 
 1. [](#improved)
+    * Update to Helios Open Reader plugin 1.2.4: printed section pages no longer start with a blank page, and embedded pages stay embedded when a section without text of its own opens its first page
     * README and Read Me page: "Moving from Grav Open Publishing Space" now says that only the guide moves across, not a blog or other pages
 
 # v1.2.2
