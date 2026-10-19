@@ -1,3 +1,9 @@
+# v1.2.6
+## 10/19/2026
+
+1. [](#improved)
+    * README and Read Me page: the single-publication steps keep section-list.md (with its cover image) in a folder of its own, and the home page example matches the folder diagram
+
 # v1.2.5
 ## 10/19/2026
 
