@@ -2,6 +2,7 @@
 ## XX/XX/2026
 
 1. [](#improved)
+    * Update to Helios Open Reader 1.2.11: complete French and German translations, including text that was only in English in its templates
     * Open Education Essentials: section pages' headings no longer repeat the names of their own pages (for example LMS Embedding), so a section's table of contents and its pages don't list the same names
 
 # v1.2.3
