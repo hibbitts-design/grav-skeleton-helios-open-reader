@@ -5,6 +5,7 @@
     * README and Read Me page: sharing a single publication's link or making it the site's homepage
     * Open Education Essentials: a Creative Commons license chart, with its attribution as a caption, on the Creative Commons Licenses page (it can be tapped to see it larger)
     * Read Me page and Page Settings: badges on Reader Pages, shown beside the section label
+    * Read Me page and Page Settings: Reader Pages can have learning objectives
 
 # v1.2.4
 ## 10/18/2026
