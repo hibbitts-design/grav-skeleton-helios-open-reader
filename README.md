@@ -265,6 +265,20 @@ To add a section inside a publication, copy an existing section folder (e.g. `01
 > [!TIP]
 > After duplicating and renaming a section folder, clear the Grav cache via the **Clear Cache** button in the Admin panel if the new section does not appear immediately.
 
+### Making a Publication the Homepage
+
+To send readers straight to one publication, share its address (e.g. `https://example.com/open-education-essentials`) – no setup needed.
+
+To make a publication the site's homepage instead, set the Home Page to that publication (in **Admin → Configuration → System**, or in `system.yaml`):
+
+```yaml
+# user/config/system.yaml
+home:
+  alias: /open-education-essentials
+```
+
+The readers list stays available at `/readers`, and the site keeps its multi-publication setup – unlike the Single-Publication Alternative below, no folders change.
+
 ### Single-Publication Alternative
 
 If you only need a single publication and prefer a simpler root-level folder structure, you can convert the skeleton to single-publication mode:
