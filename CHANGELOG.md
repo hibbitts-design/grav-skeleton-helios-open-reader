@@ -1,5 +1,5 @@
 # v1.2.4
-## XX/XX/2026
+## 10/18/2026
 
 1. [](#improved)
     * Update to Helios Open Reader 1.2.11: complete French and German translations, including text that was only in English in its templates
