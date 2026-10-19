@@ -1,3 +1,9 @@
+# v1.2.4
+## XX/XX/2026
+
+1. [](#improved)
+    * Open Education Essentials: section pages' headings no longer repeat the names of their own pages (for example LMS Embedding), so a section's table of contents and its pages don't list the same names
+
 # v1.2.3
 ## 10/15/2026
 
