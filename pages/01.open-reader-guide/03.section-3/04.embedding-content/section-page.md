@@ -77,3 +77,55 @@ Renders an Embedly card with dark mode support. Useful for embedding links to ar
 
 > [!TIP]
 > All embed shortcodes are responsive by default. Always add a descriptive `title` parameter to iframe-based shortcodes (`[iframe]`, `[googleslides]`, `[pdf]`, `[h5p]`) — this sets the iframe's accessible title for screen readers. The 16:9 ratio works well for video content and slides; use `ratio="portrait"` for PDF documents and `ratio="4:3"` for older slide formats.
+
+## Diagrams – Mermaid
+
+Flowcharts, timelines and other diagrams can be written as text in a code block marked `mermaid`. The Mermaid plugin draws them to match light or dark mode:
+
+~~~markdown
+```mermaid
+flowchart TD
+    accTitle: Choosing an entry point for OER
+    accDescr: A decision chart. If an open resource already exists and fits your course as it is, adopt it. If one exists but needs changes, adapt it. If nothing suitable exists, create and publish your own.
+
+    EXISTS("`Does an open resource exist?`") -->|Yes| FITS("`Does it fit as it is?`")
+    EXISTS -->|No| CREATE["`**3. Create** and publish`"]
+    FITS -->|Yes| ADOPT["`**1. Adopt** as it is`"]
+    FITS -->|No| ADAPT["`**2. Adapt** for your context`"]
+```
+~~~
+
+Which draws:
+
+```mermaid
+flowchart TD
+    accTitle: Choosing an entry point for OER
+    accDescr: A decision chart. If an open resource already exists and fits your course as it is, adopt it. If one exists but needs changes, adapt it. If nothing suitable exists, create and publish your own.
+
+    EXISTS("`Does an open resource exist?`") -->|Yes| FITS("`Does it fit as it is?`")
+    EXISTS -->|No| CREATE["`**3. Create** and publish`"]
+    FITS -->|Yes| ADOPT["`**1. Adopt** as it is`"]
+    FITS -->|No| ADAPT["`**2. Adapt** for your context`"]
+```
+
+The `accTitle` and `accDescr` lines give screen readers a title and description, like an image's alt text.
+
+## Math – LaTeX
+
+Math can be written as LaTeX: between single dollar signs within a sentence, or between double dollar signs on their own lines for a block. The LaTeX Math plugin draws it:
+
+~~~markdown
+The average of $n$ values is their sum divided by $n$:
+
+$$
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+$$
+~~~
+
+Which draws:
+
+The average of $n$ values is their sum divided by $n$:
+
+$$
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+$$
