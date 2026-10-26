@@ -22,6 +22,9 @@ published: false
 cover_image_layout: default
 show_section_label: '1'
 show_sticky_nav: '1'
+side_box: |
+    **Reuse this guide**
+    It's licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) – copy it, adapt it and share it, with credit.
 ---
 
 Welcome to **Open Education Essentials** – a short, practical guide to understanding and applying open education principles in your teaching practice.

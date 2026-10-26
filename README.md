@@ -123,6 +123,7 @@ Helios Open Reader provides a ready-built open textbook or reader site using por
 - **TOC scroll spy** — active heading highlighted in the Table of Contents as the reader scrolls
 - **Start Reading button** — on the reader home; links directly to the first section
 - Search across the full reader via the simplesearch plugin
+- **Side Box** – Markdown under the navigation in the sidebar, such as a call to action: set `side_box` on the publication home for every page, change it on any section or page, or set it to `false` to hide it on a page (or a section and its pages); the same setting as in Grav Open Publishing Space, so it moves with a guide
 
 ### LMS Embedding
 
@@ -248,6 +249,7 @@ These fields apply when `section-list.md` is used as the publication home (recom
 | `card_icon` | Default icon for section cards |
 | `card_image_layout` | Card image position: `side` or `top` (default: `side`) |
 | `card_description_lines` | Max description lines per card |
+| `side_box` | Optional Markdown shown under the navigation on every page of this publication |
 
 ### Showing and Hiding Publications and Sections
 
@@ -348,6 +350,7 @@ The `section-list.md` frontmatter controls the publication identity and card lay
 | `keep_my_place` | Remember the last page each reader visited (in their own browser) and show a "Continue reading" bar on the reader home (`true` by default) |
 | `show_reading_progress` | Show the reading progress (e.g. "Page 3 of 8") with the Prev/Next navigation on section pages (`true` by default) |
 | `show_oer_attribution` | Display the CC license and attribution text in the footer of every page (`true` or `false`) |
+| `side_box` | Optional Markdown shown under the navigation on every page, such as a call to action |
 | `section_label` | Label used for sections throughout the reader (e.g. `Chapter`, `Unit`). Leave empty to use the language default (`Section`). |
 | `part_label` | Label used for part headings on the reader home page when using the `part-N-section-M` folder naming pattern (e.g. `Theme`, `Project`). Leave empty to use the default (`Part`). |
 | `parts` | Optional list of custom part titles — see [Grouping Sections into Parts](#grouping-sections-into-parts) |
@@ -380,6 +383,7 @@ The `section.md` frontmatter controls each section's landing page and card appea
 | `learning_objectives` | Markdown list rendered as a Learning Objectives block at the top of the page |
 | `badge_label` | Optional status badge label (e.g. `New`, `Draft`) |
 | `badge_color` | Optional badge colour (`blue`, `green`, `yellow`, `red`, `purple`, `plain`) |
+| `side_box` | Optional Markdown shown under the navigation on this section's landing page, in place of the publication's Side Box; `false` hides it there and on the section's pages |
 
 ```yaml
 ---
