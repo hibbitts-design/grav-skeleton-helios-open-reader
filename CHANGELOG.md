@@ -1,5 +1,5 @@
 # v1.2.7
-## 10/26/2026
+## XX/XX/2026
 
 1. [](#improved)
     * Embedding Content page (Open Reader Guide): Diagrams and Math sections, each showing its source and the result drawn by the Mermaid or LaTeX Math plugin
