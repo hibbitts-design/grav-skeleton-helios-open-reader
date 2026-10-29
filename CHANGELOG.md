@@ -2,10 +2,13 @@
 ## XX/XX/2026
 
 1. [](#improved)
+    * Includes the LaTeX Math and Mermaid plugins, now on getgrav.org, so the diagram and math examples work in a new site
     * Embedding Content page (Open Reader Guide): Diagrams and Math sections, each showing its source and the result drawn by the Mermaid or LaTeX Math plugin
     * Open Education Essentials, Getting Started with OER page: a flowchart for choosing between adopting, adapting or creating OER, drawn with the Mermaid plugin
     * Open Education Essentials, Maintaining an Open Reader page: a Correcting a Formula example, showing a reader's fix to a formula as a one-line change, drawn with the LaTeX Math plugin
     * Open Education Essentials: a Side Box under the navigation on every page, inviting readers to reuse the guide under its CC BY 4.0 license, as in Grav Open Publishing Space (Helios Open Reader plugin 1.2.17)
+2. [](#bugfix)
+    * Blueprint: the skeleton's dependency is the Helios Open Reader plugin, not Helios Course Hub
 
 # v1.2.6
 ## 10/19/2026
