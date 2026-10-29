@@ -43,6 +43,10 @@ git:
         url: https://github.com/hibbitts-design/grav-plugin-helios-open-reader
         path: user/plugins/helios-open-reader
         branch: main
+    latex-math:
+        url: https://github.com/hibbitts-design/grav-plugin-latex-math
+        path: user/plugins/latex-math
+        branch: main
     license-manager:
         url: https://github.com/getgrav/grav-plugin-license-manager
         path: user/plugins/license-manager
@@ -51,6 +55,10 @@ git:
         url: https://github.com/getgrav/grav-plugin-login
         path: user/plugins/login
         branch: master
+    mermaid:
+        url: https://github.com/hibbitts-design/grav-plugin-mermaid
+        path: user/plugins/mermaid
+        branch: main
     page-inject:
         url: https://github.com/getgrav/grav-plugin-page-inject
         path: user/plugins/page-inject

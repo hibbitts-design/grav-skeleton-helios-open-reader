@@ -15,4 +15,4 @@ license: MIT
 
 dependencies:
   - { name: grav, version: '>=1.7.0' }
-  - { name: helios-course-hub }
+  - { name: helios-open-reader }
