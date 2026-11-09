@@ -1,3 +1,9 @@
+# v1.2.8
+## XX/XX/2026
+
+1. [](#improved)
+    * README and Read Me page: footnotes, glossaries and numbered figures and tables, with the Glossary and Number Figures and Tables settings and the [term] and [glossary] shortcodes (Helios Open Reader plugin 1.3.1)
+
 # v1.2.7
 ## 10/29/2026
 
