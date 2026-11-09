@@ -63,6 +63,12 @@ Helios Open Reader provides a ready-built site for open educational content – 
 - All callouts accept an optional `title="..."` parameter and support Markdown content
 - Five built-in GitHub-style callouts via the github-markdown-alerts plugin: `> [!NOTE]`, `> [!TIP]`, `> [!IMPORTANT]`, `> [!WARNING]`, `> [!CAUTION]`
 
+### Footnotes, Glossary & Figures
+- **Footnotes** – `[^1]` footnotes work on reader pages with no setup, shown as small notes below the text
+- **Glossary** – add terms and definitions to a section's or standard page's **Glossary** setting to list them there in alphabetical order; in the text, [raw]`[term]OER[/term]`[/raw] (or the editor's **Glossary Term** button) shows a term's definition when hovered over, tapped or chosen with the keyboard
+- **Numbered figures and tables** – turn on **Number Figures and Tables** on a publication's home page to number captioned figures and tables by section (Figure 3.2); a table's caption is a `Table: …` line just above or below it
+- The same as in Grav Open Publishing Space, and written by the [Pressbooks Converter](https://pressbooks-converter.hibbittsdesign.org/) for books with footnotes, a glossary or captions
+
 ### Navigation & Reading Experience
 - **Keep My Place** – records the last section page visited in localStorage; a dismissable "Continue reading" strip appears on the publication home page on return, linking directly to the last section read
 - **Reading progress indicator** – shows current page position (e.g. Page 4 of 22) with an accessible progress bar above the Prev/Next navigation on section pages
@@ -297,6 +303,7 @@ The `section-list.md` frontmatter controls the publication identity and card lay
 | `keep_my_place` | Remember the last page each reader visited (in their own browser) and show a "Continue reading" bar on the reader home (`true` by default) |
 | `show_reading_progress` | Show the reading progress (e.g. "Page 3 of 8") with the Prev/Next navigation on section pages (`true` by default) |
 | `show_oer_attribution` | Display the CC license and attribution text in the footer of every page (`true` or `false`) |
+| `number_figures` | Number captioned figures and tables by section, e.g. Figure 3.2 (`false` by default) |
 | `section_label` | Label used for sections throughout the reader (e.g. `Chapter`, `Unit`). Leave empty to use the language default (`Section`). |
 | `part_label` | Label used for part headings on the reader home page when using the `part-N-section-M` folder naming pattern (e.g. `Theme`, `Project`). Leave empty to use the default (`Part`). |
 | `parts` | Optional list of custom part titles (see Part Label below) |
@@ -329,6 +336,7 @@ The `section.md` frontmatter controls each section's landing page and card appea
 | `learning_objectives` | Markdown list rendered as a Learning Objectives block at the top of the section landing page |
 | `badge_label` | Optional status badge label (e.g. `New`, `Draft`), shown on the section card and beside the section label on the page |
 | `badge_color` | Optional badge colour (`blue`, `green`, `yellow`, `red`, `purple`, `plain`) |
+| `glossary` | A list of `term` and `definition` pairs that makes this the publication's Glossary, listed at the end of its text (or where [raw]`[glossary]`[/raw] is) |
 
 Individual content pages within a section (`section-page.md`) can also set `learning_objectives` (a Learning Objectives block at the top of the page), and `badge_label` and `badge_color` (shown beside the section label on the page); otherwise add content directly in the editor.
 
@@ -451,6 +459,9 @@ All callouts accept an optional `title="..."` parameter and support Markdown con
 - [raw]`[project-brief]...[/project-brief]`[/raw] – Project Brief block (amber); frames the assignment or challenge prompt
 - [raw]`[feedback-requested]...[/feedback-requested]`[/raw] – Feedback Requested block (purple); flags content awaiting review — useful in student projects and draft OER alike
 - [raw]`[process-note]...[/process-note]`[/raw] – Process Note block (blue); documents iterations, decisions, or pivots during a project
+- [raw]`[term]OER[/term]`[/raw] – Shows the term's definition from the publication's Glossary when hovered over, tapped or chosen with the keyboard
+- [raw]`[term name="OER"]open educational resources[/term]`[/raw] – When the words in the text differ from the Glossary's term
+- [raw]`[glossary]`[/raw] – Places the Glossary's list on its page (it's added at the end of the text otherwise)
 - [raw]`[excerpt]...[/excerpt]`[/raw] – For long multi-paragraph quoted passages; renders with a subtler grey left border and italic text than the standard Markdown blockquote, closer to how long quotations appear in print
 - [raw]`[iframe url="..."]`[/raw] – Responsive iframe embed, 16:9 by default
 - [raw]`[iframe url="..." ratio="4:3"]`[/raw] – Responsive iframe embed at 4:3 ratio
