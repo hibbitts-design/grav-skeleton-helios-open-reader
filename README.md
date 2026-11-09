@@ -118,7 +118,7 @@ Helios Open Reader provides a ready-built open textbook or reader site using por
 
 ### Footnotes, Glossary & Figures
 - **Footnotes** — `[^1]` footnotes work on reader pages with no setup, shown as small notes below the text
-- **Glossary** — add terms and definitions to a section's **Glossary** setting, or to a standard page's in the publication's folder (in an unnumbered folder, like a Topics page), to list them there in alphabetical order; in the text, `[term]OER[/term]` (or the editor's **Glossary Term** button) shows a term's definition when hovered over, tapped or chosen with the keyboard
+- **Glossary** — add terms and definitions to a section's **Glossary** setting, or to the Glossary setting of a standard page in the publication's folder (in an unnumbered folder, like a Topics page), to list them there in alphabetical order; in the text, `[term]OER[/term]` (or the editor's **Glossary Term** button) shows a term's definition when hovered over, tapped or chosen with the keyboard
 - **Numbered figures and tables** — turn on **Number Figures and Tables** on a publication's home page to number captioned figures and tables by section (Figure 3.2); a table's caption is a `Table: …` line just above or below it
 - The same as in Grav Open Publishing Space, and written by the [Pressbooks Converter](https://pressbooks-converter.hibbittsdesign.org/) for books with footnotes, a glossary or captions — see the [Helios Open Reader plugin README](https://github.com/hibbitts-design/grav-plugin-helios-open-reader#readme) for details
 
