@@ -3,6 +3,7 @@
 
 1. [](#improved)
     * README and Read Me page: footnotes, glossaries and numbered figures and tables, with the Glossary and Number Figures and Tables settings and the [term] and [glossary] shortcodes (Helios Open Reader plugin 1.3.1)
+    * Blueprint: requires Helios Open Reader plugin 1.3.1 or newer, so an update brings the plugin's glossary, footnotes and figure numbering
 
 # v1.2.7
 ## 10/29/2026
