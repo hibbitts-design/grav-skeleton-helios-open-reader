@@ -1,3 +1,9 @@
+# v1.2.9
+## XX/XX/2026
+
+1. [](#improved)
+    * README and Read Me page: how to give a publication its own address (such as a subdomain for a talk or class), with Grav's environment configuration
+
 # v1.2.8
 ## 11/09/2026
 
