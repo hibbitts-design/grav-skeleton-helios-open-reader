@@ -4,7 +4,7 @@
 
 ### Ready-to-Run Skeleton Package
 
-<p><em>Publish open textbooks, course readers, student projects, and other OER on the web – with content in portable Markdown files you fully control.</em></p>
+<p><em>An open home for one publication or many – with a table of contents beside every page, all in portable Markdown files you control.</em></p>
 
 [![Grav Discord Chat](https://img.shields.io/discord/501836936584101899.svg?logo=discord&colorB=728ADA&label=Grav%20Discord%20Chat)](https://chat.getgrav.org) [![Latest Release](https://img.shields.io/github/v/release/hibbitts-design/grav-skeleton-helios-open-reader?style=flat-square&label=Release)](https://github.com/hibbitts-design/grav-skeleton-helios-open-reader/releases/latest) [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://github.com/hibbitts-design/grav-skeleton-helios-open-reader/blob/master/LICENSE) [![PHP](https://img.shields.io/badge/PHP-%3E%3D8.0-8892BF?style=flat-square&logo=php&logoColor=white)](https://learn.getgrav.org/17/basics/requirements)
 
@@ -24,7 +24,7 @@
       <a href="https://raw.githubusercontent.com/hibbitts-design/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-2.png">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hibbitts-design/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-2-dark.png">
-        <img alt="Section reading page with sidebar navigation and Section N header" src="https://raw.githubusercontent.com/hibbitts-design/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-2.png" width="100%">
+        <img alt="Chapter page with Learning Objectives, the chapter's sections in the sidebar, and a Next link" src="https://raw.githubusercontent.com/hibbitts-design/grav-skeleton-helios-open-reader/refs/heads/main/screenshots/screenshot-2.png" width="100%">
       </picture>
       </a>
     </td>
