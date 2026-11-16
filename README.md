@@ -68,6 +68,7 @@ A complete, pre-configured package for publishing open textbooks, course readers
 - **This page as Markdown, for reuse** – a link in the footer of reading pages to just that page's Markdown, ready to adapt and reuse, with no Git setup needed (on by default; turn it off in the Helios Open Reader plugin settings). The Copy as Markdown Button plugin is also included, turned off, for anyone who'd like a one-click copy button on pages (turn it on in **Plugins**).
 - **Full text for open access** – an optional link on each publication's home page to its full text (`llms-full.txt`), portable and format-neutral, ready for search indexing, ebook pipelines, and any tool that can read a URL.
 - **Bring your Pressbooks content with you** – the companion [Pressbooks Converter](https://pressbooks-converter.hibbittsdesign.org/) (Beta) transforms a Pressbooks XHTML export into a complete Open Reader in minutes: sections, chapters, learning objectives, cover image, license, and OER attribution all carried across automatically.
+- **Everything Helios offers, too** – Helios's own components (cards and grids, tabs, steps, file trees, collapsible details, tooltips, keyboard keys, buttons and badges), Codesh code blocks, ⌘K search and dark mode work on every page, alongside the open education features
 
 ## When is Grav Helios Open Reader a Good Candidate?
 
@@ -82,7 +83,6 @@ Grav Helios Open Reader is a strong fit when you:
 Other publishing tools might be better candidates when you:
 
 - Need packaged export formats (PDF, ePub, DOCX) for offline distribution — browser print-to-PDF works, but no dedicated export pipeline is included
-- Need built-in math/LaTeX rendering for STEM content (requires a separate Grav MathJax plugin)
 - Need social annotation or inline commenting features (e.g. Hypothesis integration)
 - Need zero-server, instant publishing directly from GitHub without any hosting setup
 - Prefer a large ecosystem of themes and plugins beyond what Grav currently offers
