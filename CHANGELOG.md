@@ -1,8 +1,13 @@
 # v1.2.9
-## XX/XX/2026
+## 11/16/2026
 
 1. [](#improved)
+    * Named Helios Open Reader (was Helios Open Reader Site); description and README tagline match Open Publishing Space
+    * New screenshots
+    * Screenshot gallery shows Open Reader's own screenshots
     * README and Read Me page: how to give a publication its own address (such as a subdomain for a talk or class), with Grav's environment configuration
+    * README: Helios's own components, code blocks and search work alongside the plugin
+    * README: removed the outdated note that math needs a separate plugin (LaTeX Math is included)
 
 # v1.2.8
 ## 11/09/2026
