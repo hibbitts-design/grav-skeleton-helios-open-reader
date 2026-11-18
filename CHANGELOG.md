@@ -1,5 +1,5 @@
 # v1.2.9
-## 11/16/2026
+## 11/18/2026
 
 1. [](#improved)
     * Named Helios Open Reader (was Helios Open Reader Site); description and README tagline match Open Publishing Space
