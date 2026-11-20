@@ -33,7 +33,7 @@ Helios Open Reader gives you a modern, open, and fully controlled web reading ex
 - CMS and Git together – browser-based editing and automatic Git Sync; no need to choose between them
 - Content you own – your content lives as portable Markdown files, fully independent of any platform or service
 - Reuse as Markdown – a "This page as Markdown (.md)" link on reading pages gives readers just that page's Markdown, ready to adapt and reuse, with no Git setup needed
-- Bring existing content – the companion [Pressbooks Converter](https://pressbooks-converter.hibbittsdesign.org/) (Beta) turns a Pressbooks export into a ready-to-use Open Reader in minutes
+- Bring existing content – the companion [Pressbooks Converter](https://grav-pressbooks-converter.hibbittsdesign.org/) (Beta) turns a Pressbooks export into a ready-to-use Open Reader in minutes
 - Support open source – your Grav Premium Helios theme purchase directly supports ongoing development of the open-source Grav CMS
 
 ## Features
@@ -67,7 +67,7 @@ Helios Open Reader provides a ready-built site for open educational content – 
 - **Footnotes** – `[^1]` footnotes work on reader pages with no setup, shown as small notes below the text
 - **Glossary** – add terms and definitions to a section's **Glossary** setting, or to the Glossary setting of a standard page in the publication's folder (in an unnumbered folder, like a Topics page), to list them there in alphabetical order; in the text, [raw]`[term]OER[/term]`[/raw] (or the editor's **Glossary Term** button) shows a term's definition when hovered over, tapped or chosen with the keyboard
 - **Numbered figures and tables** – turn on **Number Figures and Tables** on a publication's home page to number captioned figures and tables by section (Figure 3.2); a table's caption is a `Table: …` line just above or below it
-- The same as in Grav Open Publishing Space, and written by the [Pressbooks Converter](https://pressbooks-converter.hibbittsdesign.org/) for books with footnotes, a glossary or captions – see the [Helios Open Reader plugin README](https://github.com/hibbitts-design/grav-plugin-helios-open-reader#readme) for details
+- The same as in Grav Open Publishing Space, and written by the [Pressbooks Converter](https://grav-pressbooks-converter.hibbittsdesign.org/) for books with footnotes, a glossary or captions – see the [Helios Open Reader plugin README](https://github.com/hibbitts-design/grav-plugin-helios-open-reader#readme) for details
 
 ### Navigation & Reading Experience
 - **Keep My Place** – records the last section page visited in localStorage; a dismissable "Continue reading" strip appears on the publication home page on return, linking directly to the last section read
@@ -527,7 +527,7 @@ The following settings are available in the Admin panel under **Plugins → Heli
 
 ## Bring Your Pressbooks Content With You
 
-The companion [Pressbooks Converter](https://pressbooks-converter.hibbittsdesign.org/) (Beta) transforms a Pressbooks XHTML export into a complete Open Reader in minutes – sections, chapters, learning objectives, H5P activity links, cover image, license, and OER attribution all carried across automatically. Because Pressbooks exports follow a single, consistent format, conversions are typically a close, faithful match to the original book. Upload your export and browse the resulting Markdown files directly – no Grav or Helios installation needed to see what carries over.
+The companion [Pressbooks Converter](https://grav-pressbooks-converter.hibbittsdesign.org/) (Beta) transforms a Pressbooks XHTML export into a complete Open Reader in minutes – sections, chapters, learning objectives, H5P activity links, cover image, license, and OER attribution all carried across automatically. Because Pressbooks exports follow a single, consistent format, conversions are typically a close, faithful match to the original book. Upload your export and browse the resulting Markdown files directly – no Grav or Helios installation needed to see what carries over.
 
 ## Support
 
